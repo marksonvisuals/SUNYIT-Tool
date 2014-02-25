@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+.table tr, .table td,.table p, .table a {
+  font-family: verdana,arial,sans;
+  font-size: 11px;
+  line-height: 19px;
+}
+
+.table, .table tr td {
+  border: 1px solid #000000;
+}
+
+.table tr td {
+	border-top:none;
+	border-left:none;
+}
+
+.table {
+	border-bottom:none;
+	border-right:none;
+}
+
+.table a {
+  text-decoration: none;
+}
+
+.monthrow {
+  text-align: center;
+  width: 100%;
+  background: #dad5c1;
+}
+
+.weekdayrow {
+  width: 100%;
+  background:#144b98;
+}
+
+.weekday {
+  text-align: center;
+  width: 14%;
+  color:#fcf9e6;
+}
+
+.day {
+  text-align: center;
+  width: 14%;
+  background:#fcf9e6;
+}
+
+.today {
+  text-align: center;
+  width: 14%;
+  background: #d2cea9;
+}
+
+.nonday {
+  text-align: center;
+  width: 14%;
+  background: #dad5c1;
+}

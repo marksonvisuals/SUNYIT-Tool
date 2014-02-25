@@ -1,0 +1,10 @@
+<?php
+// Open XML file with SimpleXML.
+$url = $_GET['url'];
+
+$xml = simplexml_load_file($url);
+// Convert XML content to JSON.
+$json = json_encode($xml);
+// Output JSON.
+echo $json;
+?>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">SUNYIT Tool</string>
+    <string name="lvmhk">Mohawk Laundry</string>
+    <string name="lvadkn">Adirondack North Laundry</string>
+    <string name="lvadks">Airondack South Laundry</string>
+    <string name="lvork">Oriskany Hall R132</string>
+    <string name="lvork2">Oriskany Hall R162</string>
+    <string name="lvmhkwd"/>
+    <string name="ldadknwd"/>
+    <string name="lvadkswd"/>
+    <string name="lvorkwd"/>
+    <string name="lvork2wd"/>
+    <string name="SPACE">       </string>
+    <color name="lvwdcolor">#FFEA00</color>
+    <string name="backb">Back</string>
+    <string name="reflv">Refresh</string>
+    <color name="lvbg">#33297B</color>
+    <color name="White">#FFFFFF</color>
+    <string name="madeby">Made By: Eric Markson</string>
+    <string name="markvis">www.marksonvisuals.com</string>
+    <string name="cctitle">Canceled Classes</string>
+    <string name="cc"></string>
+    <string name="lvref60">LaundryView data refreshes every 60 seconds.</string>
+    <string name="exitpop">Exit</string>
+    <string name="poptext">This is a popup</string>
+    <string name="wifiname"></string>
+    <string name="netname"/>
+    <string name="denied">In order to use this app, you need to connect to the internet!\n\nFor more information send an E-Mail to the developer at:\nsitapp@marksonvisuals.com</string>
+    <string name="crn">Class CRN:</string>
+    <string name="enter">Enter</string>
+    <string name="addclass">Class List Menu</string>
+    <string name="crndir">To Add a class, type the CRN number. \n To delete, click the button with appropriate CRN.</string>
+    <string name="save">Save</string>
+    <string name="clist">Class Settings</string>
+    <string name="classtab">Class List</string>
+    <string name="notifytab">Notification Settings</string>
+    <string name="bwhome">BannerWeb Homepage</string>
+    <string name="bwback">Go to Main Menu</string>
+    <string name="anghome">Angel Portal Homepage</string>
+    <string name="angback">Go to Main Menu</string>
+    <string name="wifiset">WiFi Settings</string>
+    <string name="mobileset">Network Settings</string>
+    <string name="recheck">Re-Check Network Access</string>
+    <string name="nhome">News Homepage</string>
+    <string name="nback">Back to Homescreen</string>
+    <string name="blog">Developer Blog</string>
+    <string name="bback">Go to Main Menu</string>
+    <string name="bhome">Blog Homepage</string>
+    <string name="main_no_items">No messages</string>
+    <string name="accounts_no_accounts">No accounts</string>
+    <string name="label_account_selector">Select account</string>
+    <string name="menu_accounts">Select account</string>
+    <string name="cloud">Cloud</string>
+    <string name="ccevent">Canceled Classes</string>
+    <string name="ccwidget">Loading...</string>
+    <string name="classnum">0</string>
+    
+
+</resources>

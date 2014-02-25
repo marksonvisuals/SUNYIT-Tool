@@ -1,0 +1,57 @@
+# view AndroidManifest.xml #generated:129
+-keep class com.google.ads.AdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:47
+-keep class markson.visuals.sitapp.AccountSelector { <init>(...); }
+
+# view AndroidManifest.xml #generated:166
+-keep class markson.visuals.sitapp.CCActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:118
+-keep class markson.visuals.sitapp.ClassesActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:176
+-keep class markson.visuals.sitapp.ClassesService { <init>(...); }
+
+# view AndroidManifest.xml #generated:108
+-keep class markson.visuals.sitapp.LaundryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:178
+-keep class markson.visuals.sitapp.NotificationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:40
+-keep class markson.visuals.sitapp.Push { <init>(...); }
+
+# view AndroidManifest.xml #generated:145
+-keep class markson.visuals.sitapp.ShowDescription { <init>(...); }
+
+# view AndroidManifest.xml #generated:28
+-keep class markson.visuals.sitapp.SitappActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:68
+-keep class markson.visuals.sitapp.angelActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:50
+-keep class markson.visuals.sitapp.bannerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:59
+-keep class markson.visuals.sitapp.blogActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:95
+-keep class markson.visuals.sitapp.ccService { <init>(...); }
+
+# view AndroidManifest.xml #generated:99
+-keep class markson.visuals.sitapp.classListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:77
+-keep class markson.visuals.sitapp.deniedActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:156
+-keep class markson.visuals.sitapp.eventActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:87
+-keep class markson.visuals.sitapp.newsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:134
+-keep class markson.visuals.sitapp.settingActivity { <init>(...); }
+

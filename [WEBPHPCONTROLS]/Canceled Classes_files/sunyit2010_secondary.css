@@ -1,0 +1,872 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Reset rules */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+
+  /*, tbody, tfoot, thead, tr, th, td {*/
+	margin: 0px;
+	padding: 0px;
+	border: 0px solid black;
+	outline: 0px;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+html,body {
+  /* height: 100%; /* this breaks firefox's ability to detect the height of page elements */
+}
+
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+/*table {
+	border-collapse: separate;
+	border-spacing: 0;
+}*/
+
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+}
+
+blockquote, q {
+	quotes: "" "";
+}
+
+
+/* General */
+html {
+  border           : 0px;
+}
+
+body {
+  font-family      : Verdana, Arial, Helvetica, sans-serif;
+  font-size        : 11px;
+  line-height      : 16px;
+  margin           : 0px;
+  padding          : 0px;
+  background-image : url(/images/sunyit2010/background_d.gif);
+  color            : black;
+  background-color : white;
+}
+
+a {
+  color            : #144b98;
+  text-decoration  : none;
+}
+
+a:hover {
+  text-decoration  : underline;
+  color            : #0a1626;
+}
+
+.red_text, a.red_text {
+  color            : #990000;
+}
+
+.clear {
+  clear            : both;
+}
+
+.clearl {
+  clear            : left;
+}
+
+.clearr {
+  clear            : right;
+}
+
+.breakline {
+  font-size        : x-small;
+}
+
+.navheading {
+  color            : #FFFF99;
+  font-size        : 12px;
+  font-weight      : bold;
+  margin           : 15px 0 0 6px;
+  padding          : 0;
+}
+
+/* Banner */
+#banner_holder {
+  width            : 100%;
+  height           : 80px;
+  padding          : 0px;
+  margin           : 0px;
+  background-color : #1d559f;
+  background-image: url(/images/sunyit2010/header_blue.jpg);
+  background-position: top left;
+  background-repeat: repeat-x;
+  border-bottom    : 5px solid #adafb2;
+}
+
+#banner {
+  width            : 978px;
+  height           : 80px;
+  padding          : 0px;
+  margin           : 0px auto;
+  /*background       : url(/images/sunyit2010/logo_andtext.jpg) top left no-repeat;*/
+  text-align       : left;
+}
+
+#banner h1 {
+  display          : none;
+}
+
+#search {
+  width            : 395px;
+  float            : right;
+  text-align       : right;
+  padding          : 0px;
+  margin           : 15px 15px 0px 0px;
+  line-height      : 18px;
+  color            : #ffffff;
+  height           : 65px;
+}
+
+#search a {
+  color            : #ffffff;
+  font-weight      : bold;
+  font-size        : 11px;
+}
+
+#search_box {
+  margin           : 0px;
+  padding          : 0px;
+}
+
+#search_box input {
+  text-align       : left;
+  border           : solid 2px #adafb2;
+  margin           : 5px 0px;
+}
+
+/* Webpage */
+#webpage {
+  width            : 980px;
+  padding          : 0px;
+  margin           : 0px auto;
+  height           : 100%;
+}
+
+/* Featured */
+#featured {
+  width            : 978px;
+  margin           : 0px;
+  padding          : 0px;
+  border-left      : 2px solid #ffffff;
+  border-right     : 2px solid #ffffff;
+  background-color : #ffffff;
+  height           : 100%;
+}
+
+* html #featured {
+  width            : 978px;
+}
+
+/* Left Nav */
+#featured_left {
+  width            : 245px;
+  margin           : 0px;
+  padding          : 0px;
+
+  background-image : url(http://www.sunyit.edu/images/sunyit2010/left_bluegradient.jpg);
+  background-repeat: repeat-y;
+  background-position: top left;
+  height           : 100%;
+}
+td.ldapshort {
+	font-size: 13px;
+}
+td.ldapshortrev {
+	font-size: 13px;
+}
+#left_nav {
+  width            : 245px;
+  padding          : 0px;
+  margin           : 0px;
+  float            : left;
+  height           : 100%;
+
+}
+
+#mini_cal {
+  width            : 215px;
+  margin           : 0px 27px;
+  padding          : 0px;
+}
+
+#mini_cal_heading h4 {
+  color            : #ffff99;
+  font-weight      : bold;
+  margin           : 50px 0px 10px 0px;
+  /* padding          : -20px; */
+  font-size        : 12px;
+  text-align       : center;
+}
+
+#left_nav_links {
+  list-style       : none;
+  text-align       : left;
+  margin           : 5px 0px;
+  padding          : 0px;
+}
+
+#left_nav_links ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+#left_nav li {
+  margin           : 0px;
+  padding          : 0px;
+}
+
+#left_nav_links li h4 {
+  color            : #ffff99;
+  font-weight      : bold;
+  margin           : 0px 0px 0px 12px;
+  padding          : 0px;
+  font-size        :12px;
+}
+
+#left_nav_links li a {
+  padding          : 7px 10px;
+  color            : #fcf9e6;
+  display          : block;
+  font-size        : 12px;
+  line-height      : 14.5px;
+  width            : 225px;
+  font-weight      : bold;
+}
+
+#left_nav_links li a:hover {
+  color            : #ffffff;
+  background-image : url(/images/sunyit2010/left_columnROLLOVER.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-decoration  : none;
+  border-bottom    : 2px solid #95aba8;
+  padding          : 7px 10px 5px 10px;
+}
+
+#left_nav_links li a.specnorm {
+  color            : #1d559f;
+  background-image : url(/images/sunyit2010/specnorm.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-decoration  : none;
+  border-bottom    : 2px solid #eff39e;
+  padding          : 7px 10px 5px 10px;
+}
+
+#left_nav_links li a.specnorm:hover {
+  color            : #eff39e;
+  background-image : url(/images/sunyit2010/specnorm_roll.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-decoration  : none;
+  border-bottom    : 2px solid #eff39e;
+  padding          : 7px 10px 5px 10px;
+}
+
+/* Bottom Links */
+#links {
+  width            : 245px;
+  height           : 217px;
+  float            : left;
+  padding          : 0px;
+  margin           : 0px;
+  border-top       : solid 1px #d2cea9;
+}
+
+#links div.blogger {
+  height           : 44px;
+  margin           : 2px;
+  float            : left;
+  color            : #ffffff;
+  font-size        : 18px;
+  line-height      : 22px;
+}
+
+#links div#president {
+  width            : 122px;
+  margin-right     : 2px;
+}
+
+#links div#bloggers {
+  width            : 110px;
+}
+
+#links div.blogger img {
+  padding-right    : 3px;
+}
+
+#links div.blogger a {
+  color            : #ffffff;
+  font-size        : 11px;
+  line-height      : 14px;
+  font-weight      : bold;
+}
+
+#links ul.links {
+  list-style       : none;
+  padding          : 0px;
+  margin           : 0px;
+  width            : 245px;
+  height           : 170px;
+  clear            : both;
+}
+
+#links ul.links li a {
+  display          : block;
+  padding          : 0px;
+  margin           : 0px;
+}
+
+#apply_link {
+  background-image : url(/images/sunyit2010/bottom_left_apply.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  width            : 245px;
+  height           : 37px;
+}
+
+#apply_link:hover {
+  background-image : url(/images/sunyit2010/bottom_left_apply_over.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  width            : 245px;
+  height           : 37px;
+}
+
+#give_link {
+  background-image : url(/images/sunyit2010/bottom_left_give.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  width            : 245px;
+  height           : 32px;
+}
+
+#give_link:hover {
+  background-image : url(/images/sunyit2010/bottom_left_give_over.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  width            : 245px;
+  height           : 32px;
+}
+
+#visit_link {
+  background-image : url(/images/sunyit2010/bottom_left_visit.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  width            : 245px;
+  height           : 48px;
+}
+
+#visit_link:hover {
+  background-image : url(/images/sunyit2010/bottom_left_visit_over.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  width            : 245px;
+  height           : 48px;
+}
+
+#watch_link {
+  background-image : url(/images/sunyit2010/bottom_left_watch.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  width            : 245px;
+  height           : 53px;
+}
+
+#watch_link:hover {
+  background-image : url(/images/sunyit2010/bottom_left_watch_over.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  width            : 245px;
+  height           : 53px;
+}
+
+/* Main Content */
+#featured_right {
+  width            : 733px;
+  padding          : 0px;
+  margin           : 0px;
+  float            : right;
+  background-color : #ffffff;
+  font-size        : 12px;
+  line-height      : 18px;
+  color            : #0a1626;
+  height           : 100%;
+}
+
+#content_padding {
+   margin: 0px 27px;
+
+   }
+
+#featured_right a {
+  text-decoration  : none;
+  color            : #144b98;
+  font-weight      : bold;
+}
+
+#featured_right a:hover {
+  text-decoration  : underline;
+  color            : #0a1626;
+  font-weight      : bold;
+}
+
+#featured_right a:visited {
+  color            : #6c1331;
+  font-weight      : bold;
+}
+
+#featured_right p {
+  /*margin           : 15px 27px 0px 27px;*/
+  margin: 15px 0px 0px 0px;
+}
+
+#featured_right img.main_image {
+  margin           : 15px 27px 10px 10px;
+  float            : right;
+}
+
+#featured_right h1, #featured_right h2, #featured_right h3 {
+  font-family      : Verdana, Arial, Helvetica, sans-serif;
+  color            : #0e2666;
+  font-weight: bolder;
+}
+
+#featured_right h1 {
+  font-size        : 22px;
+  text-align       : right;
+  line-height      : 28px;
+  margin           : 27px 0px 0px 0px;
+  font-weight: bolder;
+}
+
+#featured_right h2 {
+  font-size        : 18px;
+  text-align       : left;
+  line-height      : 24px;
+  background-image : url(/images/sunyit2010/subhead_gradient.jpg);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  display          : block;
+  margin           : 27px 0px 0px 0px;
+  padding          : 0px 0px 5px 0px;
+  font-weight: bolder;
+}
+
+#featured_right h3 {
+  font-size        : 16px;
+  text-align       : left;
+  line-height      : 24px;
+  padding          : 0px 0px 5px 0px;
+  font-weight: bolder;
+}
+#featured_right h4 {
+	font-weight: bolder;
+}
+
+
+#featured_right ul {
+  padding	   : 0px 0px 0px 2em;
+}
+#featured_right ul.breadcrumbs {
+  list-style       : none;
+  text-align       : right;
+  margin           : 5px 1px 0px 0px;
+}
+
+#featured_right ul.breadcrumbs li {
+  float            : right;
+  color            : #4f6d8f;
+  font-size        : 12px;
+  line-height      : 16px;
+  font-weight      : bold;
+}
+
+.blogHeader h2 {
+   background: none;
+}
+
+.eventsHeader  h2{
+   background: none;
+}
+
+#featured_right ul.breadcrumbs li a {
+  background-image : url(/images/sunyit2010/breadcrumb_bkg.jpg);
+  background-position: center right;
+  background-repeat: no-repeat;
+  padding          : 0px 23px 0px 0px;
+  margin           : 0px 0px 0px 3px;
+  font-size        : 12px;
+  line-height      : 16px;
+  font-weight      : bold;
+}
+
+#featured_right ul {
+  list-style       : disc;
+  margin           : 0px;
+}
+
+#featured_right ol {
+  list-style       : outside decimal;
+  margin           : 0px 0px 0px 40px;
+}
+
+#featured_right div.breadcrumbs ul {
+  list-style-type  : none;
+  margin           : 0px;
+}
+
+/* Main Menu */
+#main_menu {
+  width            : 978px;
+  background-image : url(/images/sunyit2010/link_background978.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  margin           : 0px;
+  padding          : 0px;
+  clear            : both;
+  border-left      : 2px solid #ffffff;
+  border-right     : 2px solid #ffffff;
+}
+
+* html #main_menu {
+  width            : 940px;
+}
+
+#main_menu ul.menu {
+  list-style       : none;
+  padding          : 0px;
+  margin           : 0px;
+  width            : 978px;
+  height           : 47px;
+}
+
+#main_menu ul.menu li {
+  list-style       : none;
+  margin           : 0px;
+  padding          : 0px;
+  display          : inline;
+}
+
+#main_menu ul.menu li a {
+  width           : 110px;
+  height          : 34px;
+  display         : inline;
+  float           : left;
+  color           : #ffffff;
+  text-align      : left;
+  font-size       : 12px;
+  font-weight     : bold;
+  margin          : 4px 0px 4px 2px;
+  padding         : 5px 0px 0px 10px;
+  line-height     : 14px;
+}
+
+#main_menu ul.menu li a:hover {
+  text-decoration  :none;
+}
+
+#future a {
+  background-image : url(/images/sunyit2010/button_future2.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+#current a {
+  background-image : url(/images/sunyit2010/button_current2.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+#alumni a {
+  background-image : url(/images/sunyit2010/button_alumni2.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+#faculty a {
+  background-image : url(/images/sunyit2010/button_faculty_staff2.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+#online a {
+  background-image : url(/images/sunyit2010/button_online2.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+#majors a {
+  background-image : url(/images/sunyit2010/button_majors2.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+#cayan a {
+  background-image : url(/images/sunyit2010/button_library2.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+#wildcat a {
+  background-image : url(/images/sunyit2010/button_wildcats2.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.menu_info {
+  width           : 978px;
+  background      : #d2d5d9;
+  padding         : 0px;
+  margin          : 0px 0px 0px -2px;
+  clear           : both;
+  position        : relative;
+  border-left     : 2px solid #ffffff;
+  border-right    : 2px solid #ffffff;
+  z-index         : 10;
+}
+
+* html .menu_info {
+  width            : 976px;
+}
+
+.menu_bottom {
+  left             : 0px;
+  bottom           : 0px;
+  width            : 978px;
+  height           : 10px;
+  position         : absolute;
+  clear            : both;
+  z-index          : 1;
+}
+
+.menu_info div.menu_close {
+  left             : 0px;
+  bottom           : 0px;
+  width            : 245px;
+  height           : 60px;
+  position         : absolute;
+  clear            : both;
+  z-index          : 5;
+}
+
+.menu_info div.menu_left {
+  padding          : 5px;
+  margin           : 5px 0px;
+  width            : 235px;
+  float            : left;
+  background-color : #d2d5d9;
+}
+
+* html .menu_info div.menu_left {
+  width            : 233px;
+}
+
+.menu_info div.menu_right {
+  margin           : 5px 0px;
+  padding          : 5px;
+  border-left      : 1px solid #577b91;
+  width            : 722px;
+  float            : left;
+  background-color : #d2d5d9;
+}
+
+.menu_column {
+  float            : left;
+}
+
+.menu_column h4 {
+  font-size        : 11px;
+  font-weight      : bold;
+}
+
+.menu_info h4 {
+  margin           : 0px;
+  padding          : 0px;
+}
+
+.menu_info div.menu_left ul, .menu_info div.menu_right ul {
+  list-style       : none;
+  margin           : 0px;
+}
+
+.menu_info div.menu_left ul li, .menu_info div.menu_right ul li {
+  padding          : 0px 0px 5px 0px;
+  line-height      : 14px;
+}
+
+.menu_info div.menu_left ul {
+  float            : right;
+  text-align       : left;
+  padding          : 0px 5px 10px 5px;
+  font-weight      : bold;
+  width            : 210px;
+}
+
+.menu_info div.menu_right ul {
+  text-align       : left;
+  padding          : 0px 5px 10px 5px;
+  width            : 130px;
+}
+
+.future_div {
+  background-color : #d2d5d9;
+  background-image : url(/images/sunyit2010/dropdown_content_lines_future.gif);
+  background-position: bottom right;
+  background-repeat: repeat-x;
+}
+
+.current_div {
+  background-color : #d2d5d9;
+  background-image : url(/images/sunyit2010/dropdown_content_lines_current.gif);
+  background-position: bottom right;
+  background-repeat: repeat-x;
+}
+
+.alumni_div {
+  background-color : #d2d5d9;
+  background-image : url(/images/sunyit2010/dropdown_content_lines_alumni.gif);
+  background-position: bottom right;
+  background-repeat: repeat-x;
+}
+
+.faculty_div {
+  background-color : #d2d5d9;
+  background-image : url(/images/sunyit2010/dropdown_content_lines_faculty.gif);
+  background-position: bottom right;
+  background-repeat: repeat-x;
+}
+
+.online_div {
+  background-color : #d2d5d9;
+  background-image : url(/images/sunyit2010/dropdown_content_lines_online.gif);
+  background-position: bottom right;
+  background-repeat: repeat-x;
+}
+
+.majors_div {
+  background-color : #d2d5d9;
+  background-image : url(/images/sunyit2010/dropdown_content_lines_majors.gif);
+  background-position: bottom right;
+  background-repeat : repeat-x;
+}
+
+.cayan_div {
+  background-color : #d2d5d9;
+  background-image : url(/images/sunyit2010/dropdown_content_lines_library.gif);
+  background-position: bottom right;
+  background-repeat: repeat-x;
+}
+
+.wildcat_div {
+  background-color : #d2d5d9;
+  background-image : url(/images/sunyit2010/dropdown_content_lines_wildcats.gif);
+  background-position: bottom right;
+  background-repeat: repeat-x;
+}
+
+/* Breadcrumbs */
+#breadcrumbs ul li {
+  list-style-type  : none;
+  margin: 0px;
+}
+
+.hidemeincms {
+  display          :  none;
+}
+
+/* Footer & Copyright */
+#footer_line {
+  background-color : #adafb2;
+  width            : 978px;
+  clear            : both;
+  height           : 5px;
+  padding          : 0px;
+  margin           : 0px 0px 0px 0px;
+  border-left      : 2px solid #ffffff;
+  border-right     : 2px solid #ffffff;
+}
+
+#footer {
+  width            : 982px;
+  height           : 60px;
+  margin           : 0px 0px 0px 0px;
+  padding          : 0px;
+  background-image : url(/images/sunyit2010/footer14px.gif);
+  background-position: top left;
+  background-repeat: repeat-x;
+  clear            : both;
+  text-align       : center;
+}
+
+* html #footer {
+  width            : 982px;
+}
+
+#ft_left {
+  width            : 245px;
+  height           : 40px;
+  margin           : 10px 0px;
+  padding          : 0px;
+  border-right     : 2px solid #577b91;
+  float            : left;
+}
+
+#ft_left p {
+  margin           : 5px 0px;
+  padding          : 0px;
+  /*text-align       : right;*/
+}
+
+#ft_left p img {
+  padding          : 0px 0px 0px 10px;
+}
+
+#ft_right {
+  width            : 731px;
+  height           : 40px;
+  padding          : 0px;
+  margin           : 12px 0px;
+  float            : left;
+  font-size        : 12px;
+}
+
+#ft_right a {
+  font-weight      : bold;
+}
+
+#copyright {
+  width            : 978px;
+  padding          : 0px;
+  margin           : 10px auto;
+  text-align       : center;
+  color            : #0e2666;
+  clear:             both;
+  position	   : relative;
+}
+
+strong, b {
+  font-weight      : bolder;
+}

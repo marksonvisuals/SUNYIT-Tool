@@ -1,0 +1,920 @@
+com.google.analytics.tracking.android.AdHitIdGenerator -> com.google.analytics.tracking.android.a:
+    boolean mAdMobSdkInstalled -> a
+    int getAdHitId() -> a
+com.google.analytics.tracking.android.AdMobInfo -> com.google.analytics.tracking.android.b:
+    com.google.analytics.tracking.android.AdMobInfo INSTANCE -> a
+    int mAdHitId -> b
+    java.util.Random mRandom -> c
+    com.google.analytics.tracking.android.AdMobInfo getInstance() -> a
+    int generateAdHitId() -> b
+com.google.analytics.tracking.android.AnalyticsClient -> com.google.analytics.tracking.android.c:
+    void sendHit(java.util.Map,long,java.lang.String,java.util.List) -> a
+    void clearHits() -> a
+    void connect() -> b
+    void disconnect() -> c
+com.google.analytics.tracking.android.AnalyticsGmsCoreClient -> com.google.analytics.tracking.android.d:
+    android.content.ServiceConnection mConnection -> a
+    com.google.analytics.tracking.android.AnalyticsGmsCoreClient$OnConnectedListener mOnConnectedListener -> b
+    com.google.analytics.tracking.android.AnalyticsGmsCoreClient$OnConnectionFailedListener mOnConnectionFailedListener -> c
+    android.content.Context mContext -> d
+    com.google.android.gms.analytics.internal.IAnalyticsService mService -> e
+    void connect() -> b
+    void disconnect() -> c
+    void sendHit(java.util.Map,long,java.lang.String,java.util.List) -> a
+    void clearHits() -> a
+    com.google.android.gms.analytics.internal.IAnalyticsService getService() -> f
+    void checkConnected() -> d
+    boolean isConnected() -> e
+    void onServiceBound() -> g
+    void onConnectionSuccess() -> h
+    com.google.android.gms.analytics.internal.IAnalyticsService access$002(com.google.analytics.tracking.android.AnalyticsGmsCoreClient,com.google.android.gms.analytics.internal.IAnalyticsService) -> a
+    void access$100(com.google.analytics.tracking.android.AnalyticsGmsCoreClient) -> a
+    android.content.Context access$200(com.google.analytics.tracking.android.AnalyticsGmsCoreClient) -> b
+    android.content.ServiceConnection access$302(com.google.analytics.tracking.android.AnalyticsGmsCoreClient,android.content.ServiceConnection) -> a
+    com.google.analytics.tracking.android.AnalyticsGmsCoreClient$OnConnectionFailedListener access$400(com.google.analytics.tracking.android.AnalyticsGmsCoreClient) -> c
+    com.google.analytics.tracking.android.AnalyticsGmsCoreClient$OnConnectedListener access$500(com.google.analytics.tracking.android.AnalyticsGmsCoreClient) -> d
+com.google.analytics.tracking.android.AnalyticsGmsCoreClient$AnalyticsServiceConnection -> com.google.analytics.tracking.android.e:
+    com.google.analytics.tracking.android.AnalyticsGmsCoreClient this$0 -> a
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+com.google.analytics.tracking.android.AnalyticsGmsCoreClient$OnConnectedListener -> com.google.analytics.tracking.android.f:
+    void onConnected() -> a
+    void onDisconnected() -> b
+com.google.analytics.tracking.android.AnalyticsGmsCoreClient$OnConnectionFailedListener -> com.google.analytics.tracking.android.g:
+    void onConnectionFailed(int,android.content.Intent) -> a
+com.google.analytics.tracking.android.AnalyticsStore -> com.google.analytics.tracking.android.h:
+    void putHit(java.util.Map,long,java.lang.String,java.util.Collection) -> a
+    void clearHits(long) -> a
+    void dispatch() -> a
+com.google.analytics.tracking.android.AnalyticsStoreStateListener -> com.google.analytics.tracking.android.i:
+    void reportStoreIsEmpty(boolean) -> a
+com.google.analytics.tracking.android.AnalyticsThread -> com.google.analytics.tracking.android.j:
+    void sendHit(java.util.Map) -> a
+    void dispatch() -> a
+    void requestAppOptOut(com.google.analytics.tracking.android.GoogleAnalytics$AppOptOutCallback) -> a
+    void requestClientId(com.google.analytics.tracking.android.AnalyticsThread$ClientIdCallback) -> a
+    java.util.concurrent.LinkedBlockingQueue getQueue() -> b
+    java.lang.Thread getThread() -> c
+com.google.analytics.tracking.android.AnalyticsThread$ClientIdCallback -> com.google.analytics.tracking.android.k:
+    void reportClientId(java.lang.String) -> a
+com.google.analytics.tracking.android.CampaignTrackingReceiver -> com.google.analytics.tracking.android.CampaignTrackingReceiver:
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.google.analytics.tracking.android.CampaignTrackingService -> com.google.analytics.tracking.android.CampaignTrackingService:
+    void onHandleIntent(android.content.Intent) -> onHandleIntent
+com.google.analytics.tracking.android.Clock -> com.google.analytics.tracking.android.l:
+    long currentTimeMillis() -> a
+com.google.analytics.tracking.android.Dispatcher -> com.google.analytics.tracking.android.m:
+    int dispatchHits(java.util.List) -> a
+    boolean okToDispatch() -> a
+com.google.analytics.tracking.android.EasyTracker -> com.google.analytics.tracking.android.n:
+    com.google.analytics.tracking.android.EasyTracker sInstance -> a
+    boolean mIsEnabled -> b
+    java.lang.String mTrackingId -> c
+    java.lang.String mAppName -> d
+    java.lang.String mAppVersion -> e
+    int mDispatchPeriod -> f
+    boolean mDebug -> g
+    java.lang.Double mSampleRate -> h
+    boolean mIsAnonymizeIpEnabled -> i
+    boolean mIsReportUncaughtExceptionsEnabled -> j
+    java.lang.Thread$UncaughtExceptionHandler mExceptionHandler -> k
+    boolean mIsAutoActivityTracking -> l
+    int mActivitiesActive -> m
+    long mSessionTimeout -> n
+    long mLastOnStopTime -> o
+    android.content.Context mContext -> p
+    java.util.Map mActivityNameMap -> q
+    com.google.analytics.tracking.android.Tracker mTracker -> r
+    com.google.analytics.tracking.android.ParameterLoader mParameterFetcher -> s
+    com.google.analytics.tracking.android.GoogleAnalytics mAnalyticsInstance -> t
+    com.google.analytics.tracking.android.ServiceManager mServiceManager -> u
+    com.google.analytics.tracking.android.Clock mClock -> v
+    java.util.Timer mTimer -> w
+    java.util.TimerTask mTimerTask -> x
+    boolean mIsInForeground -> y
+    com.google.analytics.tracking.android.EasyTracker getInstance() -> a
+    boolean checkForNewSession() -> b
+    void loadParameters() -> c
+    void setContext(android.content.Context) -> a
+    void setContext(android.content.Context,com.google.analytics.tracking.android.ParameterLoader,com.google.analytics.tracking.android.GoogleAnalytics,com.google.analytics.tracking.android.ServiceManager) -> a
+    void activityStart(android.app.Activity) -> a
+    void activityStop(android.app.Activity) -> b
+    void clearExistingTimer() -> d
+    java.lang.String getActivityName(android.app.Activity) -> c
+    boolean access$102(com.google.analytics.tracking.android.EasyTracker,boolean) -> a
+com.google.analytics.tracking.android.EasyTracker$1 -> com.google.analytics.tracking.android.o:
+    com.google.analytics.tracking.android.EasyTracker this$0 -> a
+    long currentTimeMillis() -> a
+com.google.analytics.tracking.android.EasyTracker$NoopTracker -> com.google.analytics.tracking.android.p:
+    double mSampleRate -> b
+    boolean mIsAnonymizeIp -> c
+    com.google.analytics.tracking.android.EasyTracker this$0 -> a
+    void setStartSession(boolean) -> a
+    void setAppName(java.lang.String) -> a
+    void setAppVersion(java.lang.String) -> b
+    void sendView(java.lang.String) -> c
+    void sendException(java.lang.String,boolean) -> a
+    void setAnonymizeIp(boolean) -> b
+    void setSampleRate(double) -> a
+    java.util.Map constructException(java.lang.String,boolean) -> b
+com.google.analytics.tracking.android.EasyTracker$NotInForegroundTimerTask -> com.google.analytics.tracking.android.q:
+    com.google.analytics.tracking.android.EasyTracker this$0 -> a
+    void run() -> run
+com.google.analytics.tracking.android.ExceptionParser -> com.google.analytics.tracking.android.r:
+    java.lang.String getDescription(java.lang.String,java.lang.Throwable) -> a
+com.google.analytics.tracking.android.ExceptionReporter -> com.google.analytics.tracking.android.s:
+    java.lang.Thread$UncaughtExceptionHandler mOriginalHandler -> a
+    com.google.analytics.tracking.android.Tracker mTracker -> b
+    com.google.analytics.tracking.android.ServiceManager mServiceManager -> c
+    com.google.analytics.tracking.android.ExceptionParser mExceptionParser -> d
+    void uncaughtException(java.lang.Thread,java.lang.Throwable) -> uncaughtException
+com.google.analytics.tracking.android.FutureApis -> com.google.analytics.tracking.android.t:
+    int version() -> a
+    boolean setOwnerOnlyReadWrite(java.lang.String) -> a
+com.google.analytics.tracking.android.GANetworkReceiver -> com.google.analytics.tracking.android.u:
+    com.google.analytics.tracking.android.ServiceManager mManager -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.google.analytics.tracking.android.GAServiceManager -> com.google.analytics.tracking.android.v:
+    java.lang.Object MSG_OBJECT -> a
+    android.content.Context ctx -> b
+    com.google.analytics.tracking.android.AnalyticsStore store -> c
+    com.google.analytics.tracking.android.AnalyticsThread thread -> d
+    int dispatchPeriodInSeconds -> e
+    boolean pendingDispatch -> f
+    boolean connected -> g
+    boolean listenForNetwork -> h
+    com.google.analytics.tracking.android.AnalyticsStoreStateListener listener -> i
+    android.os.Handler handler -> j
+    com.google.analytics.tracking.android.GANetworkReceiver networkReceiver -> k
+    boolean storeIsEmpty -> l
+    com.google.analytics.tracking.android.GAServiceManager instance -> m
+    com.google.analytics.tracking.android.GAServiceManager getInstance() -> a
+    void initializeNetworkReceiver() -> e
+    void initializeHandler() -> f
+    void initialize(android.content.Context,com.google.analytics.tracking.android.AnalyticsThread) -> a
+    com.google.analytics.tracking.android.AnalyticsStore getStore() -> b
+    void dispatch() -> c
+    void setDispatchPeriod(int) -> a
+    void updatePowerSaveMode(boolean,boolean) -> a
+    void updateConnectivityStatus(boolean) -> a
+    boolean access$000(com.google.analytics.tracking.android.GAServiceManager) -> a
+    java.lang.Object access$100() -> d
+    int access$200(com.google.analytics.tracking.android.GAServiceManager) -> b
+    boolean access$300(com.google.analytics.tracking.android.GAServiceManager) -> c
+    android.os.Handler access$400(com.google.analytics.tracking.android.GAServiceManager) -> d
+com.google.analytics.tracking.android.GAServiceManager$1 -> com.google.analytics.tracking.android.w:
+    com.google.analytics.tracking.android.GAServiceManager this$0 -> a
+    void reportStoreIsEmpty(boolean) -> a
+com.google.analytics.tracking.android.GAServiceManager$2 -> com.google.analytics.tracking.android.x:
+    com.google.analytics.tracking.android.GAServiceManager this$0 -> a
+    boolean handleMessage(android.os.Message) -> handleMessage
+com.google.analytics.tracking.android.GAServiceProxy -> com.google.analytics.tracking.android.y:
+    long lastRequestTime -> a
+    com.google.analytics.tracking.android.GAServiceProxy$ConnectState state -> b
+    com.google.analytics.tracking.android.AnalyticsClient client -> c
+    com.google.analytics.tracking.android.AnalyticsStore store -> d
+    com.google.analytics.tracking.android.AnalyticsStore testStore -> e
+    com.google.analytics.tracking.android.AnalyticsThread thread -> f
+    android.content.Context ctx -> g
+    java.util.Queue queue -> h
+    int connectTries -> i
+    java.util.Timer reConnectTimer -> j
+    java.util.Timer failedConnectTimer -> k
+    java.util.Timer disconnectCheckTimer -> l
+    boolean pendingDispatch -> m
+    boolean pendingClearHits -> n
+    com.google.analytics.tracking.android.Clock clock -> o
+    long idleTimeout -> p
+    void putHit(java.util.Map,long,java.lang.String,java.util.List) -> a
+    void dispatch() -> c
+    void clearHits() -> d
+    java.util.Timer cancelTimer(java.util.Timer) -> a
+    void clearAllTimers() -> f
+    void createService() -> e
+    void sendQueue() -> g
+    void dispatchToStore() -> h
+    void useStore() -> i
+    void connectToService() -> j
+    void disconnectFromService() -> k
+    void onConnected() -> a
+    void onDisconnected() -> b
+    void onConnectionFailed(int,android.content.Intent) -> a
+    void fireReconnectAttempt() -> l
+    void access$000(com.google.analytics.tracking.android.GAServiceProxy) -> a
+    com.google.analytics.tracking.android.GAServiceProxy$ConnectState access$400(com.google.analytics.tracking.android.GAServiceProxy) -> b
+    void access$500(com.google.analytics.tracking.android.GAServiceProxy) -> c
+    void access$600(com.google.analytics.tracking.android.GAServiceProxy) -> d
+    java.util.Queue access$700(com.google.analytics.tracking.android.GAServiceProxy) -> e
+    long access$800(com.google.analytics.tracking.android.GAServiceProxy) -> f
+    long access$900(com.google.analytics.tracking.android.GAServiceProxy) -> g
+    com.google.analytics.tracking.android.Clock access$1000(com.google.analytics.tracking.android.GAServiceProxy) -> h
+    void access$1100(com.google.analytics.tracking.android.GAServiceProxy) -> i
+    java.util.Timer access$1200(com.google.analytics.tracking.android.GAServiceProxy) -> j
+com.google.analytics.tracking.android.GAServiceProxy$1 -> com.google.analytics.tracking.android.z:
+    com.google.analytics.tracking.android.GAServiceProxy this$0 -> a
+    long currentTimeMillis() -> a
+com.google.analytics.tracking.android.GAServiceProxy$2 -> com.google.analytics.tracking.android.aa:
+    com.google.analytics.tracking.android.GAServiceProxy this$0 -> a
+    void run() -> run
+com.google.analytics.tracking.android.GAServiceProxy$3 -> com.google.analytics.tracking.android.ab:
+    int[] $SwitchMap$com$google$analytics$tracking$android$GAServiceProxy$ConnectState -> a
+com.google.analytics.tracking.android.GAServiceProxy$ConnectState -> com.google.analytics.tracking.android.ac:
+    com.google.analytics.tracking.android.GAServiceProxy$ConnectState CONNECTING -> a
+    com.google.analytics.tracking.android.GAServiceProxy$ConnectState CONNECTED_SERVICE -> b
+    com.google.analytics.tracking.android.GAServiceProxy$ConnectState CONNECTED_LOCAL -> c
+    com.google.analytics.tracking.android.GAServiceProxy$ConnectState BLOCKED -> d
+    com.google.analytics.tracking.android.GAServiceProxy$ConnectState PENDING_CONNECTION -> e
+    com.google.analytics.tracking.android.GAServiceProxy$ConnectState PENDING_DISCONNECT -> f
+    com.google.analytics.tracking.android.GAServiceProxy$ConnectState DISCONNECTED -> g
+    com.google.analytics.tracking.android.GAServiceProxy$ConnectState[] $VALUES -> h
+    com.google.analytics.tracking.android.GAServiceProxy$ConnectState[] values() -> values
+    com.google.analytics.tracking.android.GAServiceProxy$ConnectState valueOf(java.lang.String) -> valueOf
+com.google.analytics.tracking.android.GAServiceProxy$DisconnectCheckTask -> com.google.analytics.tracking.android.ad:
+    com.google.analytics.tracking.android.GAServiceProxy this$0 -> a
+    void run() -> run
+com.google.analytics.tracking.android.GAServiceProxy$FailedConnectTask -> com.google.analytics.tracking.android.ae:
+    com.google.analytics.tracking.android.GAServiceProxy this$0 -> a
+    void run() -> run
+com.google.analytics.tracking.android.GAServiceProxy$HitParams -> com.google.analytics.tracking.android.af:
+    java.util.Map wireFormatParams -> a
+    long hitTimeInMilliseconds -> b
+    java.lang.String path -> c
+    java.util.List commands -> d
+    java.util.Map getWireFormatParams() -> a
+    long getHitTimeInMilliseconds() -> b
+    java.lang.String getPath() -> c
+    java.util.List getCommands() -> d
+com.google.analytics.tracking.android.GAServiceProxy$ReconnectTask -> com.google.analytics.tracking.android.ag:
+    com.google.analytics.tracking.android.GAServiceProxy this$0 -> a
+    void run() -> run
+com.google.analytics.tracking.android.GAThread -> com.google.analytics.tracking.android.ah:
+    java.util.concurrent.LinkedBlockingQueue queue -> a
+    boolean mDisabled -> b
+    boolean mClosed -> c
+    boolean mAppOptOut -> d
+    java.util.List mCommands -> e
+    com.google.analytics.tracking.android.MetaModel mMetaModel -> f
+    java.lang.String mInstallCampaign -> g
+    java.lang.String mClientId -> h
+    com.google.analytics.tracking.android.GAThread sInstance -> i
+    com.google.analytics.tracking.android.ServiceProxy mServiceProxy -> j
+    android.content.Context mContext -> k
+    com.google.analytics.tracking.android.GAThread getInstance(android.content.Context) -> a
+    void init() -> e
+    void sendHit(java.util.Map) -> a
+    java.lang.String getHostUrl(java.util.Map) -> b
+    void fillExceptionParameters(java.util.Map) -> c
+    boolean isSampledOut(java.util.Map) -> d
+    void fillAppParameters(java.util.Map) -> e
+    void putIfAbsent(java.util.Map,java.lang.String,java.lang.String) -> a
+    void fillCampaignParameters(java.util.Map) -> f
+    void dispatch() -> a
+    void requestAppOptOut(com.google.analytics.tracking.android.GoogleAnalytics$AppOptOutCallback) -> a
+    void requestClientId(com.google.analytics.tracking.android.AnalyticsThread$ClientIdCallback) -> a
+    void queueToThread(java.lang.Runnable) -> a
+    boolean loadAppOptOut() -> f
+    boolean storeClientId(java.lang.String) -> a
+    java.lang.String generateClientId() -> g
+    java.lang.String initializeClientId() -> d
+    java.lang.String getAndClearCampaign(android.content.Context) -> b
+    java.lang.String printStackTrace(java.lang.Throwable) -> a
+    void run() -> run
+    java.util.concurrent.LinkedBlockingQueue getQueue() -> b
+    java.lang.Thread getThread() -> c
+    java.lang.String access$000(com.google.analytics.tracking.android.GAThread) -> a
+    boolean access$100(com.google.analytics.tracking.android.GAThread) -> b
+    boolean access$200(com.google.analytics.tracking.android.GAThread,java.util.Map) -> a
+    java.lang.String access$300(com.google.analytics.tracking.android.GAThread) -> c
+    java.lang.String access$302(com.google.analytics.tracking.android.GAThread,java.lang.String) -> a
+    void access$400(com.google.analytics.tracking.android.GAThread,java.util.Map) -> b
+    void access$500(com.google.analytics.tracking.android.GAThread,java.util.Map) -> c
+    void access$600(com.google.analytics.tracking.android.GAThread,java.util.Map) -> d
+    com.google.analytics.tracking.android.MetaModel access$700(com.google.analytics.tracking.android.GAThread) -> d
+    java.lang.String access$800(com.google.analytics.tracking.android.GAThread,java.util.Map) -> e
+    java.util.List access$900(com.google.analytics.tracking.android.GAThread) -> e
+    com.google.analytics.tracking.android.ServiceProxy access$1000(com.google.analytics.tracking.android.GAThread) -> f
+com.google.analytics.tracking.android.GAThread$1 -> com.google.analytics.tracking.android.ai:
+    java.util.Map val$hitCopy -> a
+    long val$hitTime -> b
+    com.google.analytics.tracking.android.GAThread this$0 -> c
+    void run() -> run
+com.google.analytics.tracking.android.GAThread$2 -> com.google.analytics.tracking.android.aj:
+    com.google.analytics.tracking.android.GAThread this$0 -> a
+    void run() -> run
+com.google.analytics.tracking.android.GAThread$4 -> com.google.analytics.tracking.android.ak:
+    com.google.analytics.tracking.android.GoogleAnalytics$AppOptOutCallback val$callback -> a
+    com.google.analytics.tracking.android.GAThread this$0 -> b
+    void run() -> run
+com.google.analytics.tracking.android.GAThread$5 -> com.google.analytics.tracking.android.al:
+    com.google.analytics.tracking.android.AnalyticsThread$ClientIdCallback val$callback -> a
+    com.google.analytics.tracking.android.GAThread this$0 -> b
+    void run() -> run
+com.google.analytics.tracking.android.GAUsage -> com.google.analytics.tracking.android.am:
+    java.util.SortedSet mUsedFields -> a
+    java.lang.StringBuilder mSequence -> b
+    boolean mDisableUsage -> c
+    com.google.analytics.tracking.android.GAUsage INSTANCE -> d
+    com.google.analytics.tracking.android.GAUsage getInstance() -> a
+    void setDisableUsage(boolean) -> a
+    void setUsage(com.google.analytics.tracking.android.GAUsage$Field) -> a
+    java.lang.String getAndClearUsage() -> b
+    java.lang.String getAndClearSequence() -> c
+com.google.analytics.tracking.android.GAUsage$Field -> com.google.analytics.tracking.android.an:
+    com.google.analytics.tracking.android.GAUsage$Field TRACK_VIEW -> a
+    com.google.analytics.tracking.android.GAUsage$Field TRACK_VIEW_WITH_APPSCREEN -> b
+    com.google.analytics.tracking.android.GAUsage$Field TRACK_EVENT -> c
+    com.google.analytics.tracking.android.GAUsage$Field TRACK_TRANSACTION -> d
+    com.google.analytics.tracking.android.GAUsage$Field TRACK_EXCEPTION_WITH_DESCRIPTION -> e
+    com.google.analytics.tracking.android.GAUsage$Field TRACK_EXCEPTION_WITH_THROWABLE -> f
+    com.google.analytics.tracking.android.GAUsage$Field BLANK_06 -> g
+    com.google.analytics.tracking.android.GAUsage$Field TRACK_TIMING -> h
+    com.google.analytics.tracking.android.GAUsage$Field TRACK_SOCIAL -> i
+    com.google.analytics.tracking.android.GAUsage$Field GET -> j
+    com.google.analytics.tracking.android.GAUsage$Field SET -> k
+    com.google.analytics.tracking.android.GAUsage$Field SEND -> l
+    com.google.analytics.tracking.android.GAUsage$Field SET_START_SESSION -> m
+    com.google.analytics.tracking.android.GAUsage$Field BLANK_13 -> n
+    com.google.analytics.tracking.android.GAUsage$Field SET_APP_NAME -> o
+    com.google.analytics.tracking.android.GAUsage$Field BLANK_15 -> p
+    com.google.analytics.tracking.android.GAUsage$Field SET_APP_VERSION -> q
+    com.google.analytics.tracking.android.GAUsage$Field BLANK_17 -> r
+    com.google.analytics.tracking.android.GAUsage$Field SET_APP_SCREEN -> s
+    com.google.analytics.tracking.android.GAUsage$Field GET_TRACKING_ID -> t
+    com.google.analytics.tracking.android.GAUsage$Field SET_ANONYMIZE_IP -> u
+    com.google.analytics.tracking.android.GAUsage$Field GET_ANONYMIZE_IP -> v
+    com.google.analytics.tracking.android.GAUsage$Field SET_SAMPLE_RATE -> w
+    com.google.analytics.tracking.android.GAUsage$Field GET_SAMPLE_RATE -> x
+    com.google.analytics.tracking.android.GAUsage$Field SET_USE_SECURE -> y
+    com.google.analytics.tracking.android.GAUsage$Field GET_USE_SECURE -> z
+    com.google.analytics.tracking.android.GAUsage$Field SET_REFERRER -> A
+    com.google.analytics.tracking.android.GAUsage$Field SET_CAMPAIGN -> B
+    com.google.analytics.tracking.android.GAUsage$Field SET_APP_ID -> C
+    com.google.analytics.tracking.android.GAUsage$Field GET_APP_ID -> D
+    com.google.analytics.tracking.android.GAUsage$Field SET_EXCEPTION_PARSER -> E
+    com.google.analytics.tracking.android.GAUsage$Field GET_EXCEPTION_PARSER -> F
+    com.google.analytics.tracking.android.GAUsage$Field CONSTRUCT_TRANSACTION -> G
+    com.google.analytics.tracking.android.GAUsage$Field CONSTRUCT_EXCEPTION -> H
+    com.google.analytics.tracking.android.GAUsage$Field CONSTRUCT_RAW_EXCEPTION -> I
+    com.google.analytics.tracking.android.GAUsage$Field CONSTRUCT_TIMING -> J
+    com.google.analytics.tracking.android.GAUsage$Field CONSTRUCT_SOCIAL -> K
+    com.google.analytics.tracking.android.GAUsage$Field SET_DEBUG -> L
+    com.google.analytics.tracking.android.GAUsage$Field GET_DEBUG -> M
+    com.google.analytics.tracking.android.GAUsage$Field GET_TRACKER -> N
+    com.google.analytics.tracking.android.GAUsage$Field GET_DEFAULT_TRACKER -> O
+    com.google.analytics.tracking.android.GAUsage$Field SET_DEFAULT_TRACKER -> P
+    com.google.analytics.tracking.android.GAUsage$Field SET_APP_OPT_OUT -> Q
+    com.google.analytics.tracking.android.GAUsage$Field REQUEST_APP_OPT_OUT -> R
+    com.google.analytics.tracking.android.GAUsage$Field DISPATCH -> S
+    com.google.analytics.tracking.android.GAUsage$Field SET_DISPATCH_PERIOD -> T
+    com.google.analytics.tracking.android.GAUsage$Field BLANK_48 -> U
+    com.google.analytics.tracking.android.GAUsage$Field REPORT_UNCAUGHT_EXCEPTIONS -> V
+    com.google.analytics.tracking.android.GAUsage$Field SET_AUTO_ACTIVITY_TRACKING -> W
+    com.google.analytics.tracking.android.GAUsage$Field SET_SESSION_TIMEOUT -> X
+    com.google.analytics.tracking.android.GAUsage$Field CONSTRUCT_EVENT -> Y
+    com.google.analytics.tracking.android.GAUsage$Field CONSTRUCT_ITEM -> Z
+    com.google.analytics.tracking.android.GAUsage$Field SET_APP_INSTALLER_ID -> aa
+    com.google.analytics.tracking.android.GAUsage$Field GET_APP_INSTALLER_ID -> ab
+    com.google.analytics.tracking.android.GAUsage$Field[] $VALUES -> ac
+    com.google.analytics.tracking.android.GAUsage$Field[] values() -> values
+    com.google.analytics.tracking.android.GAUsage$Field valueOf(java.lang.String) -> valueOf
+com.google.analytics.tracking.android.GoogleAnalytics -> com.google.analytics.tracking.android.ao:
+    boolean mDebug -> a
+    com.google.analytics.tracking.android.AnalyticsThread mThread -> b
+    android.content.Context mContext -> c
+    com.google.analytics.tracking.android.Tracker mDefaultTracker -> d
+    com.google.analytics.tracking.android.AdHitIdGenerator mAdHitIdGenerator -> e
+    java.lang.String mClientId -> f
+    java.lang.Boolean mAppOptOut -> g
+    java.util.Map mTrackers -> h
+    java.lang.String mLastTrackingId -> i
+    com.google.analytics.tracking.android.GoogleAnalytics sInstance -> j
+    com.google.analytics.tracking.android.GoogleAnalytics getInstance(android.content.Context) -> a
+    void setDebug(boolean) -> a
+    com.google.analytics.tracking.android.Tracker getTracker(java.lang.String) -> a
+    void sendHit(java.util.Map) -> a
+    java.lang.Boolean access$002(com.google.analytics.tracking.android.GoogleAnalytics,java.lang.Boolean) -> a
+    java.lang.String access$102(com.google.analytics.tracking.android.GoogleAnalytics,java.lang.String) -> a
+com.google.analytics.tracking.android.GoogleAnalytics$1 -> com.google.analytics.tracking.android.ap:
+    com.google.analytics.tracking.android.GoogleAnalytics this$0 -> a
+    void reportAppOptOut(boolean) -> a
+com.google.analytics.tracking.android.GoogleAnalytics$2 -> com.google.analytics.tracking.android.aq:
+    com.google.analytics.tracking.android.GoogleAnalytics this$0 -> a
+    void reportClientId(java.lang.String) -> a
+com.google.analytics.tracking.android.GoogleAnalytics$AppOptOutCallback -> com.google.analytics.tracking.android.ar:
+    void reportAppOptOut(boolean) -> a
+com.google.analytics.tracking.android.Hit -> com.google.analytics.tracking.android.as:
+    java.lang.String mHitString -> a
+    long mHitId -> b
+    long mHitTime -> c
+    java.lang.String mHitUrl -> d
+    java.lang.String getHitParams() -> a
+    void setHitString(java.lang.String) -> a
+    long getHitId() -> b
+    long getHitTime() -> c
+    java.lang.String getHitUrl() -> d
+    void setHitUrl(java.lang.String) -> b
+com.google.analytics.tracking.android.HitBuilder -> com.google.analytics.tracking.android.at:
+    java.util.Map generateHitParams(com.google.analytics.tracking.android.MetaModel,java.util.Map) -> a
+    java.lang.String postProcessHit(com.google.analytics.tracking.android.Hit,long) -> a
+    java.lang.String encode(java.lang.String) -> a
+com.google.analytics.tracking.android.HttpClientFactory -> com.google.analytics.tracking.android.au:
+    org.apache.http.client.HttpClient newInstance() -> a
+com.google.analytics.tracking.android.Log -> com.google.analytics.tracking.android.av:
+    boolean sDebug -> a
+    void setDebug(boolean) -> a
+    boolean isDebugEnabled() -> a
+    int d(java.lang.String) -> a
+    int dDebug(java.lang.String) -> b
+    int e(java.lang.String) -> c
+    int i(java.lang.String) -> d
+    int iDebug(java.lang.String) -> e
+    int v(java.lang.String) -> f
+    int vDebug(java.lang.String) -> g
+    int w(java.lang.String) -> h
+    int wDebug(java.lang.String) -> i
+    java.lang.String formatMessage(java.lang.String) -> j
+com.google.analytics.tracking.android.MetaModel -> com.google.analytics.tracking.android.aw:
+    java.util.Map mMetaInfos -> a
+    com.google.analytics.tracking.android.MetaModel$MetaInfo getMetaInfo(java.lang.String) -> a
+    void addField(java.lang.String,java.lang.String,java.lang.String,com.google.analytics.tracking.android.MetaModel$Formatter) -> a
+com.google.analytics.tracking.android.MetaModel$Formatter -> com.google.analytics.tracking.android.ax:
+    java.lang.String format(java.lang.String) -> a
+com.google.analytics.tracking.android.MetaModel$MetaInfo -> com.google.analytics.tracking.android.ay:
+    java.lang.String mUrlParam -> a
+    java.lang.String mDefaultValue -> b
+    com.google.analytics.tracking.android.MetaModel$Formatter mFormatter -> c
+    java.lang.String getUrlParam(java.lang.String) -> a
+    java.lang.String getDefaultValue() -> a
+    com.google.analytics.tracking.android.MetaModel$Formatter getFormatter() -> b
+com.google.analytics.tracking.android.MetaModelInitializer -> com.google.analytics.tracking.android.az:
+    com.google.analytics.tracking.android.MetaModel$Formatter BOOLEAN_FORMATTER -> a
+    com.google.analytics.tracking.android.MetaModel$Formatter UP_TO_TWO_DIGIT_FLOAT_FORMATTER -> b
+    void set(com.google.analytics.tracking.android.MetaModel) -> a
+com.google.analytics.tracking.android.MetaModelInitializer$1 -> com.google.analytics.tracking.android.ba:
+    java.lang.String format(java.lang.String) -> a
+com.google.analytics.tracking.android.MetaModelInitializer$2 -> com.google.analytics.tracking.android.bb:
+    java.text.DecimalFormat mFloatFormat -> a
+    java.lang.String format(java.lang.String) -> a
+com.google.analytics.tracking.android.ParameterLoader -> com.google.analytics.tracking.android.bc:
+    java.lang.String getString(java.lang.String) -> a
+    java.lang.Double getDoubleFromString(java.lang.String) -> b
+    boolean getBoolean(java.lang.String) -> c
+    int getInt(java.lang.String,int) -> a
+com.google.analytics.tracking.android.ParameterLoaderImpl -> com.google.analytics.tracking.android.bd:
+    android.content.Context mContext -> a
+    int getResourceIdForType(java.lang.String,java.lang.String) -> a
+    java.lang.String getString(java.lang.String) -> a
+    boolean getBoolean(java.lang.String) -> c
+    int getInt(java.lang.String,int) -> a
+    java.lang.Double getDoubleFromString(java.lang.String) -> b
+com.google.analytics.tracking.android.PersistentAnalyticsStore -> com.google.analytics.tracking.android.be:
+    java.lang.String CREATE_HITS_TABLE -> a
+    com.google.analytics.tracking.android.PersistentAnalyticsStore$AnalyticsDatabaseHelper mDbHelper -> b
+    com.google.analytics.tracking.android.Dispatcher mDispatcher -> c
+    com.google.analytics.tracking.android.AnalyticsStoreStateListener mListener -> d
+    android.content.Context mContext -> e
+    java.lang.String mDatabaseName -> f
+    long mLastDeleteStaleHitsTime -> g
+    com.google.analytics.tracking.android.Clock mClock -> h
+    com.google.analytics.tracking.android.HttpClientFactory createDefaultHttpClientFactory() -> e
+    void clearHits(long) -> a
+    void putHit(java.util.Map,long,java.lang.String,java.util.Collection) -> a
+    void fillVersionParametersIfNecessary(java.util.Map,java.util.Collection) -> a
+    void storeVersion(java.util.Map,java.lang.String,java.lang.String) -> a
+    void removeOldHitIfFull() -> f
+    void writeHitToDatabase(java.util.Map,long,java.lang.String) -> a
+    java.lang.String generateHitString(java.util.Map) -> a
+    java.util.List peekHits(int) -> a
+    int deleteStaleHits() -> b
+    void deleteHits(java.util.Collection) -> a
+    int getNumStoredHits() -> c
+    void dispatch() -> a
+    android.database.sqlite.SQLiteDatabase getWritableDatabase(java.lang.String) -> a
+    com.google.analytics.tracking.android.Clock access$000(com.google.analytics.tracking.android.PersistentAnalyticsStore) -> a
+    java.lang.String access$100(com.google.analytics.tracking.android.PersistentAnalyticsStore) -> b
+    android.content.Context access$200(com.google.analytics.tracking.android.PersistentAnalyticsStore) -> c
+    java.lang.String access$300() -> d
+com.google.analytics.tracking.android.PersistentAnalyticsStore$1 -> com.google.analytics.tracking.android.bf:
+    com.google.analytics.tracking.android.PersistentAnalyticsStore this$0 -> a
+    long currentTimeMillis() -> a
+com.google.analytics.tracking.android.PersistentAnalyticsStore$2 -> com.google.analytics.tracking.android.bg:
+    com.google.analytics.tracking.android.PersistentAnalyticsStore this$0 -> a
+    org.apache.http.client.HttpClient newInstance() -> a
+com.google.analytics.tracking.android.PersistentAnalyticsStore$AnalyticsDatabaseHelper -> com.google.analytics.tracking.android.bh:
+    boolean mBadDatabase -> b
+    long mLastDatabaseCheckTime -> c
+    com.google.analytics.tracking.android.PersistentAnalyticsStore this$0 -> a
+    boolean tablePresent(java.lang.String,android.database.sqlite.SQLiteDatabase) -> a
+    android.database.sqlite.SQLiteDatabase getWritableDatabase() -> getWritableDatabase
+    void onOpen(android.database.sqlite.SQLiteDatabase) -> onOpen
+    void validateColumnsPresent(android.database.sqlite.SQLiteDatabase) -> a
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+com.google.analytics.tracking.android.ServiceManager -> com.google.analytics.tracking.android.bi:
+    void dispatch() -> c
+    void setDispatchPeriod(int) -> a
+    void updateConnectivityStatus(boolean) -> a
+com.google.analytics.tracking.android.ServiceProxy -> com.google.analytics.tracking.android.bj:
+    void putHit(java.util.Map,long,java.lang.String,java.util.List) -> a
+    void dispatch() -> c
+    void createService() -> e
+com.google.analytics.tracking.android.SimpleNetworkDispatcher -> com.google.analytics.tracking.android.bk:
+    java.lang.String userAgent -> a
+    com.google.analytics.tracking.android.HttpClientFactory httpClientFactory -> b
+    android.content.Context ctx -> c
+    boolean okToDispatch() -> a
+    int dispatchHits(java.util.List) -> a
+    org.apache.http.HttpEntityEnclosingRequest buildRequest(java.lang.String,java.lang.String) -> a
+    void logDebugInformation(boolean,org.apache.http.HttpEntityEnclosingRequest) -> a
+    java.lang.String createUserAgentString(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    java.net.URL getUrl(com.google.analytics.tracking.android.Hit) -> a
+com.google.analytics.tracking.android.StandardExceptionParser -> com.google.analytics.tracking.android.bl:
+    java.util.TreeSet includedPackages -> a
+    void setIncludedPackages(android.content.Context,java.util.Collection) -> a
+    java.lang.Throwable getCause(java.lang.Throwable) -> a
+    java.lang.StackTraceElement getBestStackTraceElement(java.lang.Throwable) -> b
+    java.lang.String getDescription(java.lang.Throwable,java.lang.StackTraceElement,java.lang.String) -> a
+    java.lang.String getDescription(java.lang.String,java.lang.Throwable) -> a
+com.google.analytics.tracking.android.Tracker -> com.google.analytics.tracking.android.bm:
+    java.text.DecimalFormat DF -> a
+    com.google.analytics.tracking.android.TrackerHandler mHandler -> b
+    com.google.analytics.tracking.android.Tracker$SimpleModel mModel -> c
+    boolean mIsTrackerClosed -> d
+    boolean mIsTrackingStarted -> e
+    long mTokens -> f
+    long mLastTrackTime -> g
+    boolean mIsThrottlingEnabled -> h
+    void assertTrackerOpen() -> b
+    void setStartSession(boolean) -> a
+    void setAppName(java.lang.String) -> a
+    void setAppVersion(java.lang.String) -> b
+    void sendView(java.lang.String) -> c
+    void sendException(java.lang.String,boolean) -> a
+    void internalSend(java.lang.String,java.util.Map) -> a
+    void setAnonymizeIp(boolean) -> b
+    void setSampleRate(double) -> a
+    java.util.Map constructException(java.lang.String,boolean) -> b
+    boolean tokensAvailable() -> a
+com.google.analytics.tracking.android.Tracker$1 -> com.google.analytics.tracking.android.bn:
+com.google.analytics.tracking.android.Tracker$SimpleModel -> com.google.analytics.tracking.android.bo:
+    java.util.Map temporaryMap -> a
+    java.util.Map permanentMap -> b
+    void setForNextHit(java.lang.String,java.lang.String) -> a
+    void set(java.lang.String,java.lang.String) -> b
+    void clearTemporaryValues() -> a
+    void setAll(java.util.Map,java.lang.Boolean) -> a
+    java.util.Map getKeysAndValues() -> b
+com.google.analytics.tracking.android.TrackerHandler -> com.google.analytics.tracking.android.bp:
+    void sendHit(java.util.Map) -> a
+com.google.analytics.tracking.android.Utils -> com.google.analytics.tracking.android.bq:
+    char[] HEXBYTES -> a
+    java.util.Map parseURLParameters(java.lang.String) -> a
+    double safeParseDouble(java.lang.String) -> b
+    boolean safeParseBoolean(java.lang.String) -> c
+    java.lang.String filterCampaign(java.lang.String) -> d
+    java.lang.String getLanguage(java.util.Locale) -> a
+    int fromHexDigit(char) -> a
+    byte[] hexDecode(java.lang.String) -> e
+com.google.android.gms.analytics.internal.Command -> com.google.android.gms.analytics.internal.Command:
+    java.lang.String id -> a
+    java.lang.String urlParam -> b
+    java.lang.String value -> c
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    java.lang.String getId() -> a
+    java.lang.String getUrlParam() -> b
+    java.lang.String getValue() -> c
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+    void readFromParcel(android.os.Parcel) -> a
+com.google.android.gms.analytics.internal.Command$1 -> com.google.android.gms.analytics.internal.a:
+    com.google.android.gms.analytics.internal.Command createFromParcel(android.os.Parcel) -> a
+    com.google.android.gms.analytics.internal.Command[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+com.google.android.gms.analytics.internal.IAnalyticsService -> com.google.android.gms.analytics.internal.b:
+    void sendHit(java.util.Map,long,java.lang.String,java.util.List) -> a
+    void clearHits() -> a
+com.google.android.gms.analytics.internal.IAnalyticsService$Stub -> com.google.android.gms.analytics.internal.c:
+    com.google.android.gms.analytics.internal.IAnalyticsService asInterface(android.os.IBinder) -> a
+    boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
+com.google.android.gms.analytics.internal.IAnalyticsService$Stub$Proxy -> com.google.android.gms.analytics.internal.d:
+    android.os.IBinder mRemote -> a
+    android.os.IBinder asBinder() -> asBinder
+    void sendHit(java.util.Map,long,java.lang.String,java.util.List) -> a
+    void clearHits() -> a
+markson.visuals.sitapp.AccountSelector -> markson.visuals.sitapp.AccountSelector:
+    android.widget.ArrayAdapter accountAdapter -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void onListItemClick(android.widget.ListView,android.view.View,int,long) -> onListItemClick
+markson.visuals.sitapp.CCActivity -> markson.visuals.sitapp.CCActivity:
+    java.util.ArrayList mylist -> a
+    org.json.JSONObject json -> b
+    java.lang.String cclass -> c
+    java.lang.String num -> d
+    java.lang.String crn -> e
+    java.lang.String instructor -> f
+    java.lang.String date -> g
+    java.lang.String time -> h
+    java.lang.String fdate -> i
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void parse() -> a
+    void json() -> b
+    void download() -> c
+markson.visuals.sitapp.CCActivity$1 -> markson.visuals.sitapp.a:
+    markson.visuals.sitapp.CCActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+markson.visuals.sitapp.CCActivity$2 -> markson.visuals.sitapp.b:
+    markson.visuals.sitapp.CCActivity this$0 -> a
+    android.widget.ListView val$lv -> b
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+markson.visuals.sitapp.CCActivity$3 -> markson.visuals.sitapp.c:
+    markson.visuals.sitapp.CCActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+markson.visuals.sitapp.CCActivity$x2jprogress -> markson.visuals.sitapp.d:
+    android.app.ProgressDialog dialog -> a
+    markson.visuals.sitapp.CCActivity this$0 -> b
+    void onPreExecute() -> onPreExecute
+    void onPostExecute(java.lang.Void) -> a
+    java.lang.Void doInBackground(java.lang.Void[]) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+markson.visuals.sitapp.ClassesActivity -> markson.visuals.sitapp.ClassesActivity:
+    java.lang.String ccget -> a
+    android.widget.TextView t -> b
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void setcc() -> a
+    java.lang.String getClasses() -> b
+markson.visuals.sitapp.ClassesActivity$1 -> markson.visuals.sitapp.e:
+    markson.visuals.sitapp.ClassesActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+markson.visuals.sitapp.ClassesActivity$ccprogress -> markson.visuals.sitapp.f:
+    android.app.ProgressDialog dialog -> a
+    markson.visuals.sitapp.ClassesActivity this$0 -> b
+    void onPreExecute() -> onPreExecute
+    void onPostExecute(java.lang.Void) -> a
+    java.lang.Void doInBackground(java.lang.Void[]) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+markson.visuals.sitapp.ClassesService -> markson.visuals.sitapp.ClassesService:
+    markson.visuals.sitapp.ClassesService$NotifyServiceReceiver notifyServiceReceiver -> a
+    android.app.NotificationManager notificationManager -> c
+    android.app.Notification myNotification -> d
+    java.lang.String classNum -> b
+    void onCreate() -> onCreate
+    int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    android.app.PendingIntent getPendingIntent() -> a
+    void onDestroy() -> onDestroy
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void getNumClass() -> b
+markson.visuals.sitapp.ClassesService$NotifyServiceReceiver -> markson.visuals.sitapp.ClassesService$NotifyServiceReceiver:
+    markson.visuals.sitapp.ClassesService this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+markson.visuals.sitapp.JSONfunctions -> markson.visuals.sitapp.JSONfunctions:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onStart() -> onStart
+    void onStop() -> onStop
+    org.json.JSONObject getJSONfromURL(java.lang.String) -> a
+markson.visuals.sitapp.LaundryActivity -> markson.visuals.sitapp.LaundryActivity:
+    java.lang.String adkn -> a
+    java.lang.String adks -> b
+    java.lang.String mhk -> c
+    java.lang.String ork1 -> d
+    java.lang.String ork2 -> e
+    java.lang.String data -> f
+    java.lang.String datae -> g
+    int ork2e -> h
+    android.widget.TextView adknt -> i
+    android.widget.TextView adkst -> j
+    android.widget.TextView mhkt -> k
+    android.widget.TextView orkt -> l
+    android.widget.TextView ork2t -> m
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    java.lang.String loaddata() -> a
+    void lvorno() -> d
+    void popup() -> e
+    void getLv() -> b
+    java.lang.String loaderror() -> c
+    java.lang.String adkn(java.lang.String,java.lang.String) -> a
+    java.lang.String adks(java.lang.String,java.lang.String) -> b
+    java.lang.String mhk(java.lang.String,java.lang.String) -> c
+    java.lang.String ork1(java.lang.String,java.lang.String) -> d
+    java.lang.String ork2(java.lang.String,java.lang.String) -> e
+    java.lang.String getStringBetween(java.lang.String,java.lang.String,java.lang.String) -> a
+markson.visuals.sitapp.LaundryActivity$1 -> markson.visuals.sitapp.g:
+    markson.visuals.sitapp.LaundryActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+markson.visuals.sitapp.LaundryActivity$2 -> markson.visuals.sitapp.h:
+    markson.visuals.sitapp.LaundryActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+markson.visuals.sitapp.LaundryActivity$lvprogress -> markson.visuals.sitapp.i:
+    android.app.ProgressDialog dialog -> a
+    markson.visuals.sitapp.LaundryActivity this$0 -> b
+    void onPreExecute() -> onPreExecute
+    void onPostExecute(java.lang.Void) -> a
+    java.lang.Void doInBackground(java.lang.Void[]) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+markson.visuals.sitapp.NotificationActivity -> markson.visuals.sitapp.NotificationActivity:
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+markson.visuals.sitapp.SitappActivity -> markson.visuals.sitapp.SitappActivity:
+    android.content.Intent switchtocc -> a
+    android.content.Intent switchtobw -> b
+    android.content.Intent switchtoang -> c
+    android.content.Intent denied -> d
+    android.content.Intent switchtonews -> e
+    android.content.Intent switchtocal -> f
+    java.lang.String adid -> g
+    android.widget.TextView vers -> h
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    boolean CheckInternet() -> a
+    void lvorno() -> b
+    void popup() -> c
+    void onDestroy() -> onDestroy
+    void unbindDrawables(android.view.View) -> a
+    java.lang.String getSoftwareVersion() -> d
+    void access$0(markson.visuals.sitapp.SitappActivity) -> a
+markson.visuals.sitapp.SitappActivity$1 -> markson.visuals.sitapp.j:
+    markson.visuals.sitapp.SitappActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+markson.visuals.sitapp.SitappActivity$2 -> markson.visuals.sitapp.k:
+    markson.visuals.sitapp.SitappActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+markson.visuals.sitapp.angelActivity -> markson.visuals.sitapp.angelActivity:
+    android.webkit.WebView mWebView -> a
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void onCreate(android.os.Bundle) -> onCreate
+    void download(java.lang.String,java.lang.String) -> a
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+markson.visuals.sitapp.angelActivity$1 -> markson.visuals.sitapp.l:
+    markson.visuals.sitapp.angelActivity this$0 -> a
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+    void onReceivedSslError(android.webkit.WebView,android.webkit.SslErrorHandler,android.net.http.SslError) -> onReceivedSslError
+markson.visuals.sitapp.angelActivity$2 -> markson.visuals.sitapp.m:
+    boolean toggle -> b
+    markson.visuals.sitapp.angelActivity this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+markson.visuals.sitapp.angelActivity$3 -> markson.visuals.sitapp.n:
+    markson.visuals.sitapp.angelActivity this$0 -> a
+    java.lang.String val$url -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+markson.visuals.sitapp.angelActivity$4 -> markson.visuals.sitapp.o:
+    markson.visuals.sitapp.angelActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+markson.visuals.sitapp.bannerActivity -> markson.visuals.sitapp.bannerActivity:
+    android.webkit.WebView mWebView -> a
+    java.lang.String theUrl -> b
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+markson.visuals.sitapp.bannerActivity$1 -> markson.visuals.sitapp.p:
+    markson.visuals.sitapp.bannerActivity this$0 -> a
+    void onReceivedSslError(android.webkit.WebView,android.webkit.SslErrorHandler,android.net.http.SslError) -> onReceivedSslError
+markson.visuals.sitapp.bannerActivity$HelloWebViewClient -> markson.visuals.sitapp.q:
+    markson.visuals.sitapp.bannerActivity this$0 -> b
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+markson.visuals.sitapp.blogActivity -> markson.visuals.sitapp.blogActivity:
+    android.webkit.WebView mWebView -> a
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+markson.visuals.sitapp.blogActivity$1 -> markson.visuals.sitapp.r:
+    markson.visuals.sitapp.blogActivity this$0 -> a
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+markson.visuals.sitapp.classListActivity -> markson.visuals.sitapp.classListActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onStart() -> onStart
+    void onStop() -> onStop
+markson.visuals.sitapp.deniedActivity -> markson.visuals.sitapp.deniedActivity:
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void onCreate(android.os.Bundle) -> onCreate
+    void roamingmenu() -> a
+    void yesorno() -> b
+    boolean CheckInternet() -> c
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+markson.visuals.sitapp.deniedActivity$1 -> markson.visuals.sitapp.s:
+    markson.visuals.sitapp.deniedActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+markson.visuals.sitapp.eventActivity -> markson.visuals.sitapp.eventActivity:
+    java.util.ArrayList mylist -> a
+    org.json.JSONObject json -> b
+    java.lang.String description -> c
+    java.lang.String link -> d
+    java.lang.String name -> e
+    java.lang.String date -> f
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void onCreate(android.os.Bundle) -> onCreate
+    void addtocal() -> a
+    void parse() -> b
+    void json() -> c
+    void download() -> d
+markson.visuals.sitapp.eventActivity$1 -> markson.visuals.sitapp.t:
+    markson.visuals.sitapp.eventActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+markson.visuals.sitapp.eventActivity$2 -> markson.visuals.sitapp.u:
+    markson.visuals.sitapp.eventActivity this$0 -> a
+    android.widget.ListView val$lv -> b
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+markson.visuals.sitapp.eventActivity$3 -> markson.visuals.sitapp.v:
+    markson.visuals.sitapp.eventActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+markson.visuals.sitapp.eventActivity$4 -> markson.visuals.sitapp.w:
+    markson.visuals.sitapp.eventActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+markson.visuals.sitapp.eventActivity$5 -> markson.visuals.sitapp.x:
+    markson.visuals.sitapp.eventActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+markson.visuals.sitapp.eventActivity$x2jprogress -> markson.visuals.sitapp.y:
+    android.app.ProgressDialog dialog -> a
+    markson.visuals.sitapp.eventActivity this$0 -> b
+    void onPreExecute() -> onPreExecute
+    void onPostExecute(java.lang.Void) -> a
+    java.lang.Void doInBackground(java.lang.Void[]) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+markson.visuals.sitapp.newsActivity -> markson.visuals.sitapp.newsActivity:
+    android.webkit.WebView mWebView -> a
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+markson.visuals.sitapp.newsActivity$HelloWebViewClient -> markson.visuals.sitapp.z:
+    markson.visuals.sitapp.newsActivity this$0 -> a
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+markson.visuals.sitapp.settingActivity -> markson.visuals.sitapp.settingActivity:
+    java.lang.String[] crns -> a
+    int num -> b
+    int requestID -> c
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void onCreate(android.os.Bundle) -> onCreate
+    void full() -> a
+    void addnum(java.lang.String) -> a
+    void startws() -> b
+    void rembut(java.lang.String) -> b
+    void loadpop() -> c
+    void WriteSettings(android.content.Context,java.lang.String) -> a
+    java.lang.String ReadSettings(android.content.Context) -> a
+    java.lang.String getCancelNum() -> d
+markson.visuals.sitapp.settingActivity$1 -> markson.visuals.sitapp.aa:
+    markson.visuals.sitapp.settingActivity this$0 -> a
+    android.widget.EditText val$mEdit -> b
+    void onClick(android.view.View) -> onClick
+markson.visuals.sitapp.settingActivity$2 -> markson.visuals.sitapp.ab:
+    markson.visuals.sitapp.settingActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+markson.visuals.sitapp.settingActivity$notifyAsync -> markson.visuals.sitapp.ac:
+    android.app.ProgressDialog dialog -> a
+    android.content.Intent intent -> b
+    markson.visuals.sitapp.settingActivity this$0 -> c
+    void onPreExecute() -> onPreExecute
+    void onPostExecute(java.lang.Void) -> a
+    java.lang.Void doInBackground(java.lang.Void[]) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+markson.visuals.sitapp.widgetCC -> markson.visuals.sitapp.widgetCC:
+    java.lang.String ACTION_WIDGET_RECEIVER -> a
+    android.content.BroadcastReceiver HelloReceiver -> b
+    void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[]) -> onUpdate
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    java.lang.String loadnum() -> a
+markson.visuals.sitapp.widgetCC$1 -> markson.visuals.sitapp.ad:
+    markson.visuals.sitapp.widgetCC this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+markson.visuals.sitapp.widgetCC$UpdateService -> markson.visuals.sitapp.widgetCC$UpdateService:
+    void onStart(android.content.Intent,int) -> onStart
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+markson.visuals.sitapp.widgetCC$getnum -> markson.visuals.sitapp.ae:
+    markson.visuals.sitapp.widgetCC this$0 -> a
+    java.lang.String doInBackground(java.lang.String[]) -> a
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground

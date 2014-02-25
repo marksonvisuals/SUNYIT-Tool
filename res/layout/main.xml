@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<!--SUNYIT TOOL Andoid Application
+    Copyright (C) 2014  Eric Markson (eric@marksonvisuals.com)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#004b8e"
+    android:gravity="right">
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/sitlogo" android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ccbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/cancelbut" android:layout_toRightOf="@+id/linearLayout1" android:layout_marginRight="10dp"/>
+
+    <ImageButton
+        android:id="@+id/lvbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ccbutton"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/laundrybut" android:layout_alignLeft="@+id/ccbutton" android:layout_alignRight="@+id/ccbutton" android:layout_marginTop="15dp"/>
+
+    <ImageButton
+        android:id="@+id/apbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_toLeftOf="@+id/linearLayout1"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/angelbut" android:layout_marginLeft="10dp"/>
+
+    <ImageButton
+        android:id="@+id/bwbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/apbutton"
+        android:layout_below="@+id/apbutton"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/bannerbut" android:layout_alignLeft="@+id/apbutton" android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/vers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/SPACE"/>
+
+    <ImageButton
+        android:id="@+id/calbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/apbutton"
+        android:layout_below="@+id/bwbutton"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/calbut" android:layout_alignLeft="@+id/apbutton" android:layout_marginTop="15dp"/>
+
+    <ImageButton
+        android:id="@+id/newsbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvbutton"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/newsbut" android:layout_alignLeft="@+id/ccbutton" android:layout_alignRight="@+id/ccbutton" android:layout_marginTop="15dp"/>
+
+    <ImageButton
+        android:id="@+id/devblogbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/devblogbut" android:layout_centerHorizontal="true" android:layout_below="@+id/newsbutton" android:layout_marginTop="5dp"/>
+
+</RelativeLayout>

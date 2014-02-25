@@ -1,0 +1,230 @@
+com.google.analytics.tracking.android.AdMobInfo$AdMobKey: com.google.analytics.tracking.android.AdMobInfo$AdMobKey[] values()
+com.google.analytics.tracking.android.AdMobInfo$AdMobKey: com.google.analytics.tracking.android.AdMobInfo$AdMobKey valueOf(java.lang.String)
+com.google.analytics.tracking.android.CampaignTrackingReceiver
+com.google.analytics.tracking.android.CampaignTrackingService
+com.google.analytics.tracking.android.GAServiceProxy$ConnectState: com.google.analytics.tracking.android.GAServiceProxy$ConnectState[] values()
+com.google.analytics.tracking.android.GAServiceProxy$ConnectState: com.google.analytics.tracking.android.GAServiceProxy$ConnectState valueOf(java.lang.String)
+com.google.analytics.tracking.android.GAUsage$Field: com.google.analytics.tracking.android.GAUsage$Field[] values()
+com.google.analytics.tracking.android.GAUsage$Field: com.google.analytics.tracking.android.GAUsage$Field valueOf(java.lang.String)
+com.google.android.gms.analytics.internal.Command
+com.google.android.gms.analytics.internal.Command: android.os.Parcelable$Creator CREATOR
+markson.visuals.sitapp.AccountSelector
+markson.visuals.sitapp.AccountSelector: AccountSelector()
+markson.visuals.sitapp.CCActivity
+markson.visuals.sitapp.CCActivity: CCActivity()
+markson.visuals.sitapp.ClassesActivity
+markson.visuals.sitapp.ClassesActivity: ClassesActivity()
+markson.visuals.sitapp.ClassesService
+markson.visuals.sitapp.ClassesService: ClassesService()
+markson.visuals.sitapp.ClassesService$NotifyServiceReceiver
+markson.visuals.sitapp.JSONfunctions
+markson.visuals.sitapp.LaundryActivity
+markson.visuals.sitapp.LaundryActivity: LaundryActivity()
+markson.visuals.sitapp.NotificationActivity
+markson.visuals.sitapp.NotificationActivity: NotificationActivity()
+markson.visuals.sitapp.R$bool: int ga_autoActivityTracking
+markson.visuals.sitapp.R$bool: int ga_reportUncaughtExceptions
+markson.visuals.sitapp.R$color: int White
+markson.visuals.sitapp.R$color: int lvbg
+markson.visuals.sitapp.R$color: int lvwdcolor
+markson.visuals.sitapp.R$drawable: int angelbut
+markson.visuals.sitapp.R$drawable: int apbutton
+markson.visuals.sitapp.R$drawable: int apbuttonc
+markson.visuals.sitapp.R$drawable: int bannerbut
+markson.visuals.sitapp.R$drawable: int bwbutton
+markson.visuals.sitapp.R$drawable: int bwbuttonc
+markson.visuals.sitapp.R$drawable: int calbut
+markson.visuals.sitapp.R$drawable: int calbutton
+markson.visuals.sitapp.R$drawable: int calbuttonc
+markson.visuals.sitapp.R$drawable: int cancelbut
+markson.visuals.sitapp.R$drawable: int ccbutton
+markson.visuals.sitapp.R$drawable: int ccbuttonc
+markson.visuals.sitapp.R$drawable: int denied
+markson.visuals.sitapp.R$drawable: int devblogbut
+markson.visuals.sitapp.R$drawable: int devblogicon
+markson.visuals.sitapp.R$drawable: int devblogiconc
+markson.visuals.sitapp.R$drawable: int ic_launcher
+markson.visuals.sitapp.R$drawable: int ic_launcher2
+markson.visuals.sitapp.R$drawable: int laundrybut
+markson.visuals.sitapp.R$drawable: int lvbutton
+markson.visuals.sitapp.R$drawable: int lvbuttonc
+markson.visuals.sitapp.R$drawable: int lvlogo
+markson.visuals.sitapp.R$drawable: int newsbut
+markson.visuals.sitapp.R$drawable: int newsbutton
+markson.visuals.sitapp.R$drawable: int newsbuttonc
+markson.visuals.sitapp.R$drawable: int refresh
+markson.visuals.sitapp.R$drawable: int sitlogo
+markson.visuals.sitapp.R$id: int RelativeLayout1
+markson.visuals.sitapp.R$id: int TextView01
+markson.visuals.sitapp.R$id: int TextView02
+markson.visuals.sitapp.R$id: int TextView03
+markson.visuals.sitapp.R$id: int TextView04
+markson.visuals.sitapp.R$id: int TextView05
+markson.visuals.sitapp.R$id: int TextView06
+markson.visuals.sitapp.R$id: int TextView07
+markson.visuals.sitapp.R$id: int TextView08
+markson.visuals.sitapp.R$id: int TextView12
+markson.visuals.sitapp.R$id: int angback
+markson.visuals.sitapp.R$id: int angelview
+markson.visuals.sitapp.R$id: int anghome
+markson.visuals.sitapp.R$id: int apbutton
+markson.visuals.sitapp.R$id: int back
+markson.visuals.sitapp.R$id: int bannerview
+markson.visuals.sitapp.R$id: int bback
+markson.visuals.sitapp.R$id: int bhome
+markson.visuals.sitapp.R$id: int blog
+markson.visuals.sitapp.R$id: int blogview
+markson.visuals.sitapp.R$id: int button1
+markson.visuals.sitapp.R$id: int bwback
+markson.visuals.sitapp.R$id: int bwbutton
+markson.visuals.sitapp.R$id: int bwhome
+markson.visuals.sitapp.R$id: int calbutton
+markson.visuals.sitapp.R$id: int ccback
+markson.visuals.sitapp.R$id: int ccbutton
+markson.visuals.sitapp.R$id: int ccbutton1
+markson.visuals.sitapp.R$id: int cclist
+markson.visuals.sitapp.R$id: int ccrefresh
+markson.visuals.sitapp.R$id: int clist
+markson.visuals.sitapp.R$id: int crnbut
+markson.visuals.sitapp.R$id: int crnlayout
+markson.visuals.sitapp.R$id: int devblogbut
+markson.visuals.sitapp.R$id: int editText1
+markson.visuals.sitapp.R$id: int eventbut
+markson.visuals.sitapp.R$id: int feedtitle
+markson.visuals.sitapp.R$id: int imageView1
+markson.visuals.sitapp.R$id: int imageView2
+markson.visuals.sitapp.R$id: int inforow
+markson.visuals.sitapp.R$id: int item_subtitle
+markson.visuals.sitapp.R$id: int item_title
+markson.visuals.sitapp.R$id: int linearLayout1
+markson.visuals.sitapp.R$id: int linearLayoutcc
+markson.visuals.sitapp.R$id: int linearLayoutlv
+markson.visuals.sitapp.R$id: int lvbutton
+markson.visuals.sitapp.R$id: int message
+markson.visuals.sitapp.R$id: int mobilesettings
+markson.visuals.sitapp.R$id: int nback
+markson.visuals.sitapp.R$id: int newsbutton
+markson.visuals.sitapp.R$id: int newsview
+markson.visuals.sitapp.R$id: int nhome
+markson.visuals.sitapp.R$id: int recheck
+markson.visuals.sitapp.R$id: int refresh
+markson.visuals.sitapp.R$id: int scrollView1
+markson.visuals.sitapp.R$id: int tableLayout1
+markson.visuals.sitapp.R$id: int tableRow1
+markson.visuals.sitapp.R$id: int tableRow11
+markson.visuals.sitapp.R$id: int tableRow12
+markson.visuals.sitapp.R$id: int tableRow14
+markson.visuals.sitapp.R$id: int tableRow15
+markson.visuals.sitapp.R$id: int tableRow2
+markson.visuals.sitapp.R$id: int tableRow3
+markson.visuals.sitapp.R$id: int tableRow5
+markson.visuals.sitapp.R$id: int tableRow6
+markson.visuals.sitapp.R$id: int tableRow8
+markson.visuals.sitapp.R$id: int tableRow9
+markson.visuals.sitapp.R$id: int text1
+markson.visuals.sitapp.R$id: int textView1
+markson.visuals.sitapp.R$id: int textView2
+markson.visuals.sitapp.R$id: int textView3
+markson.visuals.sitapp.R$id: int time
+markson.visuals.sitapp.R$id: int vers
+markson.visuals.sitapp.R$id: int widget1label
+markson.visuals.sitapp.R$id: int widgetccbut
+markson.visuals.sitapp.R$id: int wifisettings
+markson.visuals.sitapp.R$layout: int account_row
+markson.visuals.sitapp.R$layout: int accounts
+markson.visuals.sitapp.R$layout: int angelmenu
+markson.visuals.sitapp.R$layout: int angelweb
+markson.visuals.sitapp.R$layout: int bannerweb
+markson.visuals.sitapp.R$layout: int blogweb
+markson.visuals.sitapp.R$layout: int bmenu
+markson.visuals.sitapp.R$layout: int bwmenu
+markson.visuals.sitapp.R$layout: int ccmenu
+markson.visuals.sitapp.R$layout: int classes
+markson.visuals.sitapp.R$layout: int classlist
+markson.visuals.sitapp.R$layout: int crnpush
+markson.visuals.sitapp.R$layout: int eventlist
+markson.visuals.sitapp.R$layout: int jsontest
+markson.visuals.sitapp.R$layout: int laundry
+markson.visuals.sitapp.R$layout: int lvmenu
+markson.visuals.sitapp.R$layout: int main
+markson.visuals.sitapp.R$layout: int main_item_two_line_row
+markson.visuals.sitapp.R$layout: int mainmenu
+markson.visuals.sitapp.R$layout: int newsmenu
+markson.visuals.sitapp.R$layout: int newsweb
+markson.visuals.sitapp.R$layout: int notauth
+markson.visuals.sitapp.R$layout: int settings
+markson.visuals.sitapp.R$layout: int widgetcc
+markson.visuals.sitapp.R$layout: int widgetccinfo
+markson.visuals.sitapp.R$string: int SPACE
+markson.visuals.sitapp.R$string: int accounts_no_accounts
+markson.visuals.sitapp.R$string: int addclass
+markson.visuals.sitapp.R$string: int angback
+markson.visuals.sitapp.R$string: int anghome
+markson.visuals.sitapp.R$string: int app_name
+markson.visuals.sitapp.R$string: int backb
+markson.visuals.sitapp.R$string: int bback
+markson.visuals.sitapp.R$string: int bhome
+markson.visuals.sitapp.R$string: int blog
+markson.visuals.sitapp.R$string: int bwback
+markson.visuals.sitapp.R$string: int bwhome
+markson.visuals.sitapp.R$string: int cc
+markson.visuals.sitapp.R$string: int ccevent
+markson.visuals.sitapp.R$string: int cctitle
+markson.visuals.sitapp.R$string: int ccwidget
+markson.visuals.sitapp.R$string: int classnum
+markson.visuals.sitapp.R$string: int classtab
+markson.visuals.sitapp.R$string: int clist
+markson.visuals.sitapp.R$string: int cloud
+markson.visuals.sitapp.R$string: int crn
+markson.visuals.sitapp.R$string: int crndir
+markson.visuals.sitapp.R$string: int denied
+markson.visuals.sitapp.R$string: int enter
+markson.visuals.sitapp.R$string: int exitpop
+markson.visuals.sitapp.R$string: int ga_trackingId
+markson.visuals.sitapp.R$string: int label_account_selector
+markson.visuals.sitapp.R$string: int ldadknwd
+markson.visuals.sitapp.R$string: int lvadkn
+markson.visuals.sitapp.R$string: int lvadks
+markson.visuals.sitapp.R$string: int lvadkswd
+markson.visuals.sitapp.R$string: int lvmhk
+markson.visuals.sitapp.R$string: int lvmhkwd
+markson.visuals.sitapp.R$string: int lvork
+markson.visuals.sitapp.R$string: int lvork2
+markson.visuals.sitapp.R$string: int lvork2wd
+markson.visuals.sitapp.R$string: int lvorkwd
+markson.visuals.sitapp.R$string: int lvref60
+markson.visuals.sitapp.R$string: int madeby
+markson.visuals.sitapp.R$string: int main_no_items
+markson.visuals.sitapp.R$string: int markvis
+markson.visuals.sitapp.R$string: int menu_accounts
+markson.visuals.sitapp.R$string: int mobileset
+markson.visuals.sitapp.R$string: int nback
+markson.visuals.sitapp.R$string: int netname
+markson.visuals.sitapp.R$string: int nhome
+markson.visuals.sitapp.R$string: int notifytab
+markson.visuals.sitapp.R$string: int poptext
+markson.visuals.sitapp.R$string: int recheck
+markson.visuals.sitapp.R$string: int reflv
+markson.visuals.sitapp.R$string: int save
+markson.visuals.sitapp.R$string: int wifiname
+markson.visuals.sitapp.R$string: int wifiset
+markson.visuals.sitapp.SitappActivity
+markson.visuals.sitapp.SitappActivity: SitappActivity()
+markson.visuals.sitapp.angelActivity
+markson.visuals.sitapp.angelActivity: angelActivity()
+markson.visuals.sitapp.bannerActivity
+markson.visuals.sitapp.bannerActivity: bannerActivity()
+markson.visuals.sitapp.blogActivity
+markson.visuals.sitapp.blogActivity: blogActivity()
+markson.visuals.sitapp.classListActivity
+markson.visuals.sitapp.classListActivity: classListActivity()
+markson.visuals.sitapp.deniedActivity
+markson.visuals.sitapp.deniedActivity: deniedActivity()
+markson.visuals.sitapp.eventActivity
+markson.visuals.sitapp.eventActivity: eventActivity()
+markson.visuals.sitapp.newsActivity
+markson.visuals.sitapp.newsActivity: newsActivity()
+markson.visuals.sitapp.settingActivity
+markson.visuals.sitapp.settingActivity: settingActivity()
+markson.visuals.sitapp.widgetCC
+markson.visuals.sitapp.widgetCC$UpdateService
