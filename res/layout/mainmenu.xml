@@ -18,7 +18,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 	<item android:id="@+id/blog"
-	      android:title="@string/blog" />
+	      android:title="@string/github" />
 	<!--<item android:id="@+id/cloud"
 	      android:title="@string/cloud" />-->
 </menu>

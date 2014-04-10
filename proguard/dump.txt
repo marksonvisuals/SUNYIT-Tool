@@ -26979,7 +26979,7 @@ Methods (count = 17):
       [68] iconst_1
       [69] istore_2 v2
       [70] iload_2 v2
-      [71] ifne +10 (target=81)
+      [71] ifeq +10 (target=81)
       [74] aload_0 v0
       [75] invokespecial #135
         + Methodref [markson/visuals/sitapp/LaundryActivity.e ()V]
@@ -29376,10 +29376,10 @@ Constant Pool (count = 95):
   + String [ Banner Web Clicked]
   + String [ CC button clicked]
   + String [ Calendar Clicked]
-  + String [ Developer Blog Button Clicked]
+  + String [ GitHub Button Clicked]
   + String [ News Clicked]
   + String [android.intent.action.VIEW]
-  + String [http://www.marksonvisuals.com/blog]
+  + String [https://github.com/marksonvisuals/SUNYIT-Tool]
   + String [n]
   + Class [android/content/Intent]
   + Class [android/net/Uri]
@@ -29426,7 +29426,7 @@ Constant Pool (count = 95):
   + Utf8 [ Banner Web Clicked]
   + Utf8 [ CC button clicked]
   + Utf8 [ Calendar Clicked]
-  + Utf8 [ Developer Blog Button Clicked]
+  + Utf8 [ GitHub Button Clicked]
   + Utf8 [ News Clicked]
   + Utf8 [()I]
   + Utf8 [()V]
@@ -29453,7 +29453,7 @@ Constant Pool (count = 95):
   + Utf8 [e]
   + Utf8 [f]
   + Utf8 [getId]
-  + Utf8 [http://www.marksonvisuals.com/blog]
+  + Utf8 [https://github.com/marksonvisuals/SUNYIT-Tool]
   + Utf8 [java/lang/Object]
   + Utf8 [markson/visuals/sitapp/CCActivity]
   + Utf8 [markson/visuals/sitapp/SitappActivity]
@@ -29680,7 +29680,7 @@ Methods (count = 2):
       [287] ldc #9
         + String [n]
       [289] ldc #5
-        + String [ Developer Blog Button Clicked]
+        + String [ GitHub Button Clicked]
       [291] invokestatic #32
         + Methodref [android/util/Log.e (Ljava/lang/String;Ljava/lang/String;)I]
       [294] pop
@@ -29690,7 +29690,7 @@ Methods (count = 2):
       [299] ldc #7
         + String [android.intent.action.VIEW]
       [301] ldc #8
-        + String [http://www.marksonvisuals.com/blog]
+        + String [https://github.com/marksonvisuals/SUNYIT-Tool]
       [303] invokestatic #31
         + Methodref [android/net/Uri.parse (Ljava/lang/String;)Landroid/net/Uri;]
       [306] invokespecial #30
@@ -31698,7 +31698,7 @@ Constant Pool (count = 176):
   + String [android.os.StrictMode$ThreadPolicy$Builder]
   + String [build]
   + String [detectAll]
-  + String [http://www.marksonvisuals.com/blog/]
+  + String [https://github.com/marksonvisuals/SUNYIT-Tool]
   + String [n]
   + String [penaltyLog]
   + String [setThreadPolicy]
@@ -31837,7 +31837,7 @@ Constant Pool (count = 176):
   + Utf8 [getMethod]
   + Utf8 [getSettings]
   + Utf8 [goBack]
-  + Utf8 [http://www.marksonvisuals.com/blog/]
+  + Utf8 [https://github.com/marksonvisuals/SUNYIT-Tool]
   + Utf8 [inflate]
   + Utf8 [invoke]
   + Utf8 [java/lang/Class]
@@ -32078,7 +32078,7 @@ Methods (count = 7):
       [220] getfield #30
         + Fieldref [markson/visuals/sitapp/blogActivity.a Landroid/webkit/WebView;]
       [223] ldc #11
-        + String [http://www.marksonvisuals.com/blog/]
+        + String [https://github.com/marksonvisuals/SUNYIT-Tool]
       [225] invokevirtual #43
         + Methodref [android/webkit/WebView.loadUrl (Ljava/lang/String;)V]
       [228] aload_0 v0
@@ -32172,7 +32172,7 @@ Methods (count = 7):
       [36] getfield #30
         + Fieldref [markson/visuals/sitapp/blogActivity.a Landroid/webkit/WebView;]
       [39] ldc #11
-        + String [http://www.marksonvisuals.com/blog/]
+        + String [https://github.com/marksonvisuals/SUNYIT-Tool]
       [41] invokevirtual #43
         + Methodref [android/webkit/WebView.loadUrl (Ljava/lang/String;)V]
       [44] iconst_1

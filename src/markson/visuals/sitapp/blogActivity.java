@@ -83,7 +83,7 @@ public class blogActivity extends Activity {
 			
 			mWebView = (WebView) findViewById(R.id.blogview);
 		    mWebView.getSettings().setJavaScriptEnabled(true);
-		    mWebView.loadUrl("http://www.marksonvisuals.com/blog/");
+		    mWebView.loadUrl("https://github.com/marksonvisuals/SUNYIT-Tool");
 		    
 		    mWebView.setWebViewClient(new WebViewClient()
 		    {
@@ -121,7 +121,7 @@ public class blogActivity extends Activity {
 		        	finish();
 		            break;
 		        case R.id.bhome:
-		        	mWebView.loadUrl("http://www.marksonvisuals.com/blog/");
+		        	mWebView.loadUrl("https://github.com/marksonvisuals/SUNYIT-Tool");
 		            break;
 		    }
 		    return true;

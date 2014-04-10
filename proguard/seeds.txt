@@ -54,6 +54,8 @@ markson.visuals.sitapp.R$drawable: int newsbutton
 markson.visuals.sitapp.R$drawable: int newsbuttonc
 markson.visuals.sitapp.R$drawable: int refresh
 markson.visuals.sitapp.R$drawable: int sitlogo
+markson.visuals.sitapp.R$drawable: int wantohelpicon
+markson.visuals.sitapp.R$drawable: int wantohelpiconc
 markson.visuals.sitapp.R$id: int RelativeLayout1
 markson.visuals.sitapp.R$id: int TextView01
 markson.visuals.sitapp.R$id: int TextView02
@@ -164,7 +166,6 @@ markson.visuals.sitapp.R$string: int app_name
 markson.visuals.sitapp.R$string: int backb
 markson.visuals.sitapp.R$string: int bback
 markson.visuals.sitapp.R$string: int bhome
-markson.visuals.sitapp.R$string: int blog
 markson.visuals.sitapp.R$string: int bwback
 markson.visuals.sitapp.R$string: int bwhome
 markson.visuals.sitapp.R$string: int cc
@@ -181,6 +182,7 @@ markson.visuals.sitapp.R$string: int denied
 markson.visuals.sitapp.R$string: int enter
 markson.visuals.sitapp.R$string: int exitpop
 markson.visuals.sitapp.R$string: int ga_trackingId
+markson.visuals.sitapp.R$string: int github
 markson.visuals.sitapp.R$string: int label_account_selector
 markson.visuals.sitapp.R$string: int ldadknwd
 markson.visuals.sitapp.R$string: int lvadkn

@@ -18,9 +18,9 @@
 	
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="markson.visuals.sitapp"
-    android:versionCode="256"
-    android:versionName="2.5.6" >
-    <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="17"/>
+    android:versionCode="261"
+    android:versionName="2.6.1" >
+    <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="19"/>
 
 	
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />

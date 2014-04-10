@@ -177,22 +177,21 @@ public class LaundryActivity extends Activity {
 		String student = "Student";
 		boolean tolv = false;
 		ConnectivityManager conMgr = (ConnectivityManager) getSystemService(Activity.CONNECTIVITY_SERVICE);
-		boolean wifi = conMgr.getNetworkInfo(ConnectivityManager.TYPE_WIFI)
-				.isConnected();
+		boolean wifi = conMgr.getNetworkInfo(ConnectivityManager.TYPE_WIFI).isConnected();
 
 		WifiManager wifiManager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
 		WifiInfo info = wifiManager.getConnectionInfo();
-
-		if (wifi == true) {
+		if (wifi) {
+			
 			if (info.getSSID().equals(student)) {
-
+				
 				Log.e("n", " Student Network at SUNYIT");
 				tolv = true;
 			}
 
 		}
 
-		if (tolv == false) {
+		if (tolv) {
 			popup();
 			
 		} else {

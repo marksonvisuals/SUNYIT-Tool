@@ -51,6 +51,8 @@ public final class R {
         public static final int newsbuttonc=0x7f020018;
         public static final int refresh=0x7f020019;
         public static final int sitlogo=0x7f02001a;
+        public static final int wantohelpicon=0x7f02001b;
+        public static final int wantohelpiconc=0x7f02001c;
     }
     public static final class id {
         public static final int RelativeLayout1=0x7f07000d;
@@ -167,7 +169,6 @@ public final class R {
         public static final int backb=0x7f04000d;
         public static final int bback=0x7f04002b;
         public static final int bhome=0x7f04002c;
-        public static final int blog=0x7f04002a;
         public static final int bwback=0x7f040022;
         public static final int bwhome=0x7f040021;
         public static final int cc=0x7f040012;
@@ -186,6 +187,7 @@ public final class R {
         /** Replace placeholder ID with your tracking ID
          */
         public static final int ga_trackingId=0x7f040000;
+        public static final int github=0x7f04002a;
         public static final int label_account_selector=0x7f04002f;
         public static final int ldadknwd=0x7f040008;
         public static final int lvadkn=0x7f040003;

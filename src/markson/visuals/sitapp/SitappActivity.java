@@ -174,11 +174,11 @@ public class SitappActivity<ThisApp> extends Activity {
 					startActivity(switchtocal);
 					break;
 				case R.id.devblogbut:
-					Log.e("n", " Developer Blog Button Clicked");
+					Log.e("n", " GitHub Button Clicked");
 					/*Intent switchtoblog = new Intent(SitappActivity.this, blogActivity.class);
 		        	startActivity(switchtoblog);*/
 					Intent intent = new Intent(Intent.ACTION_VIEW, 
-						     Uri.parse("http://www.marksonvisuals.com/blog"));
+						     Uri.parse("https://github.com/marksonvisuals/SUNYIT-Tool"));
 						startActivity(intent);
 		        	break;
 
@@ -279,22 +279,20 @@ public class SitappActivity<ThisApp> extends Activity {
 		String student = "Student";
 		boolean tolv = false;
 		ConnectivityManager conMgr = (ConnectivityManager) getSystemService(Activity.CONNECTIVITY_SERVICE);
-		boolean wifi = conMgr.getNetworkInfo(ConnectivityManager.TYPE_WIFI)
-				.isConnected();
+		boolean wifi = conMgr.getNetworkInfo(ConnectivityManager.TYPE_WIFI).isConnected();
 
 		WifiManager wifiManager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
 		WifiInfo info = wifiManager.getConnectionInfo();
-
-		if (wifi == true) {
+		if (wifi) {
 			if (info.getSSID().equals(student)) {
-
+				
 				Log.e("n", " Student Network at SUNYIT");
 				tolv = true;
 			}
 
 		}
 
-		if (tolv == true) {
+		if (tolv) {
 			Intent switchtolv = new Intent(SitappActivity.this,
 					LaundryActivity.class);
 			Log.e("n", " LV button clicked");

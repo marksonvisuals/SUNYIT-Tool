@@ -256,14 +256,14 @@ markson.visuals.sitapp.R$id
 markson.visuals.sitapp.R$layout
 markson.visuals.sitapp.R$string
 markson.visuals.sitapp.SitappActivity:
-    198:217:public void notifications()
-    235:237:public boolean isConnected()
+    214:233:public void notifications()
+    251:253:public boolean isConnected()
 markson.visuals.sitapp.eventActivity:
     java.lang.String title
 markson.visuals.sitapp.settingActivity:
     java.lang.String crntext
     android.widget.EditText mEdit
-    367:394:public void notifications()
+    383:410:public void notifications()
 markson.visuals.sitapp.settingActivity$notifyAsync:
     android.app.PendingIntent pi
 markson.visuals.sitapp.widgetCC:
